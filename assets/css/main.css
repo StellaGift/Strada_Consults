@@ -897,22 +897,23 @@ section,
 .hero .hero-visual .floating-elements .floating-card {
   position: absolute;
   background: var(--surface-color);
-  padding: 16px 20px;
+  padding: 12px 16px;
   border-radius: 8px;
   box-shadow: 0 8px 32px color-mix(in srgb, var(--default-color), transparent 85%);
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
+  width: 155px;
   animation: floating 3s ease-in-out infinite;
 }
 
 .hero .hero-visual .floating-elements .floating-card i {
-  font-size: 1.125rem;
+  font-size: 1rem;
   color: var(--accent-color);
 }
 
 .hero .hero-visual .floating-elements .floating-card span {
-  font-size: 0.875rem;
+  font-size: 0.8rem;
   font-weight: 500;
   color: var(--heading-color);
   white-space: nowrap;
@@ -938,11 +939,13 @@ section,
 
 @media (max-width: 768px) {
   .hero .hero-visual .floating-elements .floating-card {
-    padding: 12px 16px;
+    width: 138px;
+    padding: 10px 12px;
+    gap: 8px;
   }
 
   .hero .hero-visual .floating-elements .floating-card span {
-    font-size: 0.75rem;
+    font-size: 0.72rem;
   }
 
   .hero .hero-visual .floating-elements .floating-card.card-1 {
@@ -4066,7 +4069,7 @@ section,
 }
 
 .logo-rc {
-  margin-top: -8px;
+  margin-top: -23px;
   font-family: var(--heading-font);
   font-size: 11px;
   font-weight: 500;
