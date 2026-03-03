@@ -1254,6 +1254,11 @@ section,
   cursor: pointer;
 }
 
+.features .feature-static-item {
+  cursor: default;
+  pointer-events: none;
+}
+
 .features .nav-link::before {
   content: "";
   position: absolute;
