@@ -980,6 +980,20 @@ section,
   .hero {
     padding: 60px 0;
   }
+
+  .hero .hero-visual {
+    margin-top: 28px;
+  }
+
+  .hero .hero-visual .hero-image-wrapper {
+    height: auto;
+  }
+
+  .hero .hero-visual .hero-image-wrapper .hero-image {
+    height: auto;
+    object-fit: contain;
+    object-position: center top;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1256,7 +1270,6 @@ section,
 
 .features .feature-static-item {
   cursor: default;
-  pointer-events: none;
 }
 
 .features .nav-link::before {
@@ -1950,14 +1963,15 @@ section,
   }
 
   .features-2 .testimonial-image {
-    max-height: 300px;
-    overflow: hidden;
+    max-height: none;
+    overflow: visible;
   }
 
   .features-2 .testimonial-image img {
     width: 100%;
-    height: 300px;
-    object-fit: cover;
+    height: auto;
+    object-fit: contain;
+    object-position: center top;
   }
 
   .features-2 .testimonial-content {
