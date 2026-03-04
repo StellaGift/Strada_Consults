@@ -921,7 +921,7 @@ section,
 
 .hero .hero-visual .floating-elements .floating-card.card-1 {
   top: auto;
-  bottom: calc(10% - 8px);
+  bottom: calc(10% - 33px);
   left: 50%;
   margin-left: -77.5px;
   animation-delay: 0s;
@@ -952,7 +952,7 @@ section,
 
   .hero .hero-visual .floating-elements .floating-card.card-1 {
     top: auto;
-    bottom: calc(8% - 8px);
+    bottom: calc(8% - 33px);
     left: 50%;
     margin-left: -69px;
   }
