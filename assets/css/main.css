@@ -920,8 +920,10 @@ section,
 }
 
 .hero .hero-visual .floating-elements .floating-card.card-1 {
-  top: 10px;
-  left: 40%;
+  top: auto;
+  bottom: calc(10% - 8px);
+  left: 50%;
+  margin-left: -77.5px;
   animation-delay: 0s;
 }
 
@@ -949,7 +951,10 @@ section,
   }
 
   .hero .hero-visual .floating-elements .floating-card.card-1 {
-    left: 5px;
+    top: auto;
+    bottom: calc(8% - 8px);
+    left: 50%;
+    margin-left: -69px;
   }
 
   .hero .hero-visual .floating-elements .floating-card.card-2 {
@@ -4066,6 +4071,7 @@ section,
 
 #header .logo {
   overflow: visible;
+  transform: translateY(-10px);
 }
 
 .logo-rc {
