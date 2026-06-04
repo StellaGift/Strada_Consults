@@ -270,6 +270,37 @@ h6 {
     color: var(--nav-hover-color);
   }
 
+  .navmenu .real-estate-nav {
+    margin: 0 8px;
+  }
+
+  .navmenu .real-estate-link,
+  .navmenu .real-estate-link:focus {
+    gap: 7px;
+    padding: 10px 16px;
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
+    color: #1b181d !important;
+    background: var(--accent-color);
+    font-weight: 800;
+    letter-spacing: 0;
+    box-shadow: 0 8px 18px rgba(212, 175, 55, 0.22);
+  }
+
+  .navmenu .real-estate-link:hover,
+  .navmenu .real-estate-link:focus:hover {
+    color: #1b181d !important;
+    background: color-mix(in srgb, var(--accent-color), #ffffff 18%);
+    transform: translateY(-1px);
+  }
+
+  .navmenu .real-estate-link i,
+  .navmenu .real-estate-link:focus i {
+    color: #1b181d !important;
+    margin-left: 0;
+    font-size: 15px;
+  }
+
   .navmenu .dropdown ul {
     margin: 0;
     padding: 10px 0;
@@ -397,6 +428,40 @@ h6 {
   .navmenu .active,
   .navmenu .active:focus {
     color: var(--nav-dropdown-hover-color);
+  }
+
+  .navmenu .real-estate-nav {
+    padding: 6px 12px;
+  }
+
+  .navmenu .real-estate-link,
+  .navmenu .real-estate-link:focus {
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
+    color: #1b181d !important;
+    background: var(--accent-color);
+    font-weight: 800;
+    letter-spacing: 0;
+  }
+
+  .navmenu .real-estate-link:hover,
+  .navmenu .real-estate-link:focus:hover {
+    color: #1b181d !important;
+    background: color-mix(in srgb, var(--accent-color), #ffffff 18%);
+  }
+
+  .navmenu .real-estate-link i,
+  .navmenu .real-estate-link:focus i {
+    width: auto;
+    height: auto;
+    margin-left: 0;
+    border-radius: 0;
+    color: #1b181d !important;
+    background-color: transparent;
   }
 
   .navmenu .active i,
