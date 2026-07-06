@@ -1199,6 +1199,156 @@
 		}
 	};
 
+	var setupRiversSearchSuggestions = function() {
+		var forms = document.querySelectorAll('.js-rivers-search-form');
+
+		if (!forms.length) {
+			return;
+		}
+
+		var options = buildRiversSearchOptions();
+		var activePanel = null;
+
+		var hidePanel = function(panel) {
+			if (!panel) {
+				return;
+			}
+
+			panel.hidden = true;
+			panel.classList.remove('is-open');
+		};
+
+		var showPanel = function(panel) {
+			if (activePanel && activePanel !== panel) {
+				hidePanel(activePanel);
+			}
+
+			activePanel = panel;
+			panel.hidden = false;
+			panel.classList.add('is-open');
+		};
+
+		var getMatches = function(query) {
+			var normalizedQuery = normalizeSearchText(query);
+			var matches = [];
+
+			for (var i = 0; i < options.length; i++) {
+				if (!normalizedQuery || normalizeSearchText(options[i]).indexOf(normalizedQuery) !== -1) {
+					matches.push(options[i]);
+				}
+
+				if (matches.length >= 12) {
+					break;
+				}
+			}
+
+			return matches;
+		};
+
+		var renderSuggestions = function(input, panel) {
+			var matches = getMatches(input.value);
+
+			panel.innerHTML = '';
+
+			if (!matches.length) {
+				var emptyMessage = document.createElement('div');
+				emptyMessage.className = 'rivers-search-suggestions-empty';
+				emptyMessage.textContent = 'No matching areas found';
+				panel.appendChild(emptyMessage);
+				showPanel(panel);
+				return;
+			}
+
+			for (var i = 0; i < matches.length; i++) {
+				var optionButton = document.createElement('button');
+				optionButton.type = 'button';
+				optionButton.className = 'rivers-search-suggestion';
+				optionButton.setAttribute('role', 'option');
+				optionButton.textContent = matches[i];
+
+				optionButton.addEventListener('pointerdown', function(event) {
+					event.preventDefault();
+				});
+
+				optionButton.addEventListener('click', function() {
+					input.value = this.textContent;
+					hidePanel(panel);
+					input.setAttribute('aria-expanded', 'false');
+					input.focus();
+
+					if (isPropertiesPage) {
+						updateLocationQueryInUrl(input.value.trim());
+						syncSearchInputs(input.value.trim());
+						filterProperties(input.value.trim());
+					}
+				});
+
+				panel.appendChild(optionButton);
+			}
+
+			showPanel(panel);
+		};
+
+		for (var i = 0; i < forms.length; i++) {
+			(function(form, index) {
+				var input = form.querySelector('.js-rivers-search-input');
+				var submitButton = form.querySelector('button[type="submit"]');
+				var panel = document.createElement('div');
+
+				if (!input) {
+					return;
+				}
+
+				panel.id = 'rivers-search-suggestions-' + index;
+				panel.className = 'rivers-search-suggestions';
+				panel.setAttribute('role', 'listbox');
+				panel.hidden = true;
+				form.appendChild(panel);
+
+				input.setAttribute('aria-autocomplete', 'list');
+				input.setAttribute('aria-controls', panel.id);
+				input.setAttribute('aria-expanded', 'false');
+				input.removeAttribute('list');
+
+				var openPanel = function() {
+					renderSuggestions(input, panel);
+					input.setAttribute('aria-expanded', 'true');
+				};
+
+				var closePanel = function() {
+					hidePanel(panel);
+					input.setAttribute('aria-expanded', 'false');
+				};
+
+				input.addEventListener('focus', openPanel);
+				input.addEventListener('click', openPanel);
+				input.addEventListener('input', openPanel);
+
+				input.addEventListener('keydown', function(event) {
+					if (event.key === 'Escape') {
+						closePanel();
+					}
+				});
+
+				if (submitButton) {
+					submitButton.addEventListener('click', function(event) {
+						if (!input.value.trim() && panel.hidden) {
+							event.preventDefault();
+							input.focus();
+							openPanel();
+						}
+					});
+				}
+
+				document.addEventListener('pointerdown', function(event) {
+					if (!form.contains(event.target)) {
+						closePanel();
+					}
+				});
+			})(forms[i], i);
+		}
+	};
+
 	var applyRiversPropertyData = function() {
 		var cards = document.querySelectorAll('.section-properties .property-item');
 		var property;
@@ -1621,6 +1771,7 @@
 	};
 
 	populateRiversSearchDatalist();
+	setupRiversSearchSuggestions();
 	applyRiversPropertyData();
 	setupRiversSearchForms();
 	setupHeroVideo();
