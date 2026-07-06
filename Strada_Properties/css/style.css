@@ -9762,7 +9762,7 @@ textarea {
   object-fit: cover;
   -o-object-position: center center;
   object-position: center center;
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: opacity 0.7s ease;
   -o-transition: opacity 0.7s ease;
   transition: opacity 0.7s ease; }
@@ -9781,7 +9781,9 @@ textarea {
 
 @media (prefers-reduced-motion: reduce) {
   .hero-media .hero-video {
-    display: none; } }
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none; } }
 
 .hero-slide {
   top: 0;

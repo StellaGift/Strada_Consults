@@ -1391,12 +1391,7 @@
 			return;
 		}
 
-		var preferences = getVideoPreferenceState();
 		var isNearViewport = true;
-
-		if (preferences.prefersReducedMotion || preferences.shouldSaveData) {
-			return;
-		}
 
 		video.defaultMuted = true;
 		video.muted = true;
