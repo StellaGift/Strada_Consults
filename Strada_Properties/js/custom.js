@@ -1337,15 +1337,15 @@
 			return true;
 		}
 
+		var hasSource = !!(video.getAttribute('src') || video.querySelector('source[src]'));
 		var sourceList = [
 			{ src: video.getAttribute('data-src'), type: video.getAttribute('data-type') || 'video/mp4' },
 			{ src: video.getAttribute('data-src-mp4'), type: video.getAttribute('data-type-mp4') || 'video/mp4' },
 			{ src: video.getAttribute('data-src-webm'), type: video.getAttribute('data-type-webm') || 'video/webm' }
 		];
-		var hasSource = false;
 
 		for (var i = 0; i < sourceList.length; i++) {
-			if (!sourceList[i].src) {
+			if (!sourceList[i].src || hasSource) {
 				continue;
 			}
 
@@ -1360,9 +1360,13 @@
 			return false;
 		}
 
+		video.defaultMuted = true;
 		video.muted = true;
 		video.playsInline = true;
-		video.preload = 'metadata';
+		video.setAttribute('muted', '');
+		video.setAttribute('playsinline', '');
+		video.setAttribute('webkit-playsinline', '');
+		video.preload = video.classList.contains('js-hero-video') ? 'auto' : 'metadata';
 		video.setAttribute('data-loaded', 'true');
 		video.load();
 
@@ -1381,19 +1385,26 @@
 	};
 
 	var setupHeroVideo = function() {
-		var video = document.querySelector('.js-hero-video[data-src]');
+		var video = document.querySelector('.js-hero-video');
 
 		if (!video) {
 			return;
 		}
 
 		var preferences = getVideoPreferenceState();
-		var isNearViewport = false;
-		var heroLoadScheduled = false;
+		var isNearViewport = true;
 
 		if (preferences.prefersReducedMotion || preferences.shouldSaveData) {
 			return;
 		}
+
+		video.defaultMuted = true;
+		video.muted = true;
+		video.playsInline = true;
+		video.autoplay = true;
+		video.setAttribute('muted', '');
+		video.setAttribute('playsinline', '');
+		video.setAttribute('webkit-playsinline', '');
 
 		var handleHeroLoaded = function() {
 			video.classList.add('is-loaded');
@@ -1406,11 +1417,15 @@
 			if (video.getAttribute('data-loaded') === 'true') {
 				if (video.readyState >= 2) {
 					handleHeroLoaded();
+				} else if (isNearViewport) {
+					playDeferredVideo(video);
 				}
 				return;
 			}
 
 			video.addEventListener('loadeddata', handleHeroLoaded, { once: true });
+			video.addEventListener('canplay', handleHeroLoaded, { once: true });
+			video.addEventListener('playing', handleHeroLoaded, { once: true });
 
 			if (!loadDeferredVideo(video)) {
 				return;
@@ -1418,39 +1433,22 @@
 
 			if (video.readyState >= 2) {
 				handleHeroLoaded();
+			} else if (isNearViewport) {
+				playDeferredVideo(video);
 			}
 		};
 
-		var scheduleHeroVideo = function() {
-			if (heroLoadScheduled) {
-				return;
-			}
-
-			heroLoadScheduled = true;
-
-			var startLoad = function() {
-				if ('requestIdleCallback' in window) {
-					window.requestIdleCallback(loadHeroVideo, { timeout: 2200 });
-				} else {
-					window.setTimeout(loadHeroVideo, 1200);
-				}
-			};
-
-			if (document.readyState === 'complete') {
-				startLoad();
-			} else {
-				window.addEventListener('load', startLoad, { once: true });
-			}
-		};
+		loadHeroVideo();
 
 		if ('IntersectionObserver' in window) {
 			var observer = new IntersectionObserver(function(entries) {
 				for (var i = 0; i < entries.length; i++) {
 					if (entries[i].isIntersecting) {
 						isNearViewport = true;
-						scheduleHeroVideo();
 						if (video.getAttribute('data-loaded') === 'true') {
 							playDeferredVideo(video);
+						} else {
+							loadHeroVideo();
 						}
 						break;
 					}
@@ -1463,7 +1461,7 @@
 			observer.observe(video);
 		} else {
 			isNearViewport = true;
-			scheduleHeroVideo();
+			loadHeroVideo();
 		}
 
 		document.addEventListener('visibilitychange', function() {
@@ -1473,6 +1471,15 @@
 				playDeferredVideo(video);
 			}
 		});
+
+		var retryHeroPlayback = function() {
+			if (isNearViewport && video.getAttribute('data-loaded') === 'true' && video.paused) {
+				playDeferredVideo(video);
+			}
+		};
+
+		document.addEventListener('touchstart', retryHeroPlayback, { passive: true });
+		document.addEventListener('click', retryHeroPlayback);
 	};
 
 	var setupInteractionVideos = function() {
