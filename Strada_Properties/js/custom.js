@@ -1266,10 +1266,6 @@
 				optionButton.setAttribute('role', 'option');
 				optionButton.textContent = matches[i];
 
-				optionButton.addEventListener('pointerdown', function(event) {
-					event.preventDefault();
-				});
-
 				optionButton.addEventListener('click', function() {
 					input.value = this.textContent;
 					hidePanel(panel);
