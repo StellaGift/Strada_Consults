@@ -947,6 +947,7 @@
 				mode: 'carousel',
 				speed: 700,
 				autoplay: true,
+				autoplayTimeout: 2000,
 				controls: false,
 				nav: false,
 				autoplayButtonOutput: false,
@@ -963,6 +964,7 @@
 				items: 1,
 				gutter: 30,
 				autoplay: true,
+				autoplayTimeout: 2000,
 				controls: false,
 				nav: true,
 				autoplayButtonOutput: false
@@ -977,6 +979,7 @@
 				gutter: 30,
 				items: 3,
 				autoplay: true,
+				autoplayTimeout: 2000,
 				autoplayButtonOutput: false,
 				controlsContainer: '#property-nav',
 				responsive: {
@@ -1004,6 +1007,7 @@
 				items: 3,
 				gutter: 50,
 				autoplay: true,
+				autoplayTimeout: 2000,
 				autoplayButtonOutput: false,
 				controlsContainer: '#testimonial-nav',
 				responsive: {
