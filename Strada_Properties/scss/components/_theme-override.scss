@@ -612,6 +612,46 @@ textarea.form-control:focus {
   color: var(--theme-navy) !important;
 }
 
+.property-slider-wrap .property-nav-arrows button,
+.property-slider-wrap .property-nav-arrows button:hover,
+.property-slider-wrap .property-nav-arrows button:focus-visible,
+.property-slider-wrap .property-nav-arrows button[disabled]:hover,
+.property-slider-wrap .property-nav-arrows button[disabled]:focus-visible {
+  background: rgba(255, 255, 255, 0.96);
+  color: var(--theme-gold);
+}
+
+.property-slider-wrap .property-nav-arrows button span,
+#property-nav.property-nav-arrows span,
+#property-nav.property-nav-arrows span:hover,
+#property-nav.property-nav-arrows span.active {
+  padding: 0;
+  border-radius: 0;
+  background: transparent !important;
+  color: inherit !important;
+}
+
+.property-slider-wrap .tns-nav button:before,
+.img-property-slide-wrap .tns-nav button:before,
+.testimonial-slider-wrap .tns-nav button:before {
+  background-color: rgba(var(--theme-gold-rgb), 0.48);
+}
+
+.property-slider-wrap .tns-nav button.tns-nav-active:before,
+.img-property-slide-wrap .tns-nav button.tns-nav-active:before,
+.testimonial-slider-wrap .tns-nav button.tns-nav-active:before {
+  background-color: var(--theme-gold);
+}
+
+html[data-color-mode="dark"] .property-slider-wrap .property-nav-arrows button,
+html[data-color-mode="dark"] .property-slider-wrap .property-nav-arrows button:hover,
+html[data-color-mode="dark"] .property-slider-wrap .property-nav-arrows button:focus-visible,
+html[data-color-mode="dark"] .property-slider-wrap .property-nav-arrows button[disabled]:hover,
+html[data-color-mode="dark"] .property-slider-wrap .property-nav-arrows button[disabled]:focus-visible {
+  background: #111a2f;
+  color: #f0d77a;
+}
+
 .faq-hero {
   background-position: center center;
 }
