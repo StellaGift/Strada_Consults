@@ -76,23 +76,24 @@ a:hover {
 .logo {
   display: inline-flex;
   align-items: center;
+  align-self: center;
   line-height: 1;
 }
 
 .logo .logo-image {
   display: block;
-  width: 312px;
-  height: 72px;
-  max-width: min(68vw, 312px);
+  width: 260px;
+  height: auto;
+  max-width: min(62vw, 260px);
   object-fit: contain;
   object-position: center center;
 }
 
 @media (max-width: 991.98px) {
   .logo .logo-image {
-    width: 246px;
-    height: 56px;
-    max-width: 68vw;
+    width: 220px;
+    height: auto;
+    max-width: 64vw;
   }
 }
 
