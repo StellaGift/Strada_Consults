@@ -11106,6 +11106,16 @@ textarea.form-control:focus {
   color: var(--theme-navy) !important;
 }
 
+#property-nav:not(.property-nav-arrows) span,
+#property-nav:not(.property-nav-arrows) span:hover,
+#property-nav:not(.property-nav-arrows) span.active,
+#testimonial-nav span,
+#testimonial-nav span:hover,
+#testimonial-nav span.active {
+  background: transparent !important;
+  color: var(--theme-gold) !important;
+}
+
 .faq-hero {
   background-position: center center;
 }
