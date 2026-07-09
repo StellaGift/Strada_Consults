@@ -11207,6 +11207,7 @@ textarea.form-control:focus {
 
 .faq-hero {
   background-position: center center;
+  background-size: cover;
 }
 
 .faq-cinematic-section {
@@ -11386,6 +11387,10 @@ html[data-color-mode="dark"] .faq-contact-section {
   .hero.page-inner.faq-hero > .container > .row {
     height: auto;
     min-height: 420px;
+  }
+
+  .hero.page-inner.faq-hero {
+    background-position: 42% center !important;
   }
 
   .faq-cinematic-section,
