@@ -763,7 +763,7 @@ html[data-color-mode="dark"] .property-slider-wrap .property-nav-arrows button[d
   }
 
   .hero.page-inner.services-hero {
-    background-position: left 42% !important;
+    background-position: calc(0% - 13px) 42% !important;
   }
 }
 
