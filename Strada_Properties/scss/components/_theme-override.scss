@@ -933,7 +933,7 @@ html[data-color-mode="dark"] .faq-contact-section {
   }
 
   .hero.page-inner.faq-hero {
-    background-position: 42% center !important;
+    background-position: calc(42% + 4px) center !important;
   }
 
   .faq-cinematic-section,
