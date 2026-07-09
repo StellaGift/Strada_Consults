@@ -11568,7 +11568,7 @@ html[data-color-mode="dark"] .faq-contact-section {
   }
 
   .hero.page-inner.services-hero {
-    background-position: left 42% !important;
+    background-position: calc(0% + 12px) 42% !important;
   }
 }
 
