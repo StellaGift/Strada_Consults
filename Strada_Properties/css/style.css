@@ -11540,7 +11540,8 @@ html[data-color-mode="dark"] .faq-contact-section {
   color: rgba(var(--theme-navy-rgb), 0.78) !important;
 }
 
-.hero.page-inner.contact-hero {
+.hero.page-inner.contact-hero,
+.hero.page-inner.about-hero {
   background-position: center center;
   background-size: cover;
 }
@@ -11550,12 +11551,14 @@ html[data-color-mode="dark"] .faq-contact-section {
   background-size: cover;
 }
 
-.hero.page-inner.contact-hero.overlay:before {
+.hero.page-inner.contact-hero.overlay:before,
+.hero.page-inner.about-hero.overlay:before {
   background-color: rgba(0, 0, 0, 0.36);
 }
 
 @media (max-width: 767.98px) {
-  .hero.page-inner.contact-hero {
+  .hero.page-inner.contact-hero,
+  .hero.page-inner.about-hero {
     background-position: 58% center !important;
   }
 }
