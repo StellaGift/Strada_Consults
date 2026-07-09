@@ -11552,7 +11552,7 @@ html[data-color-mode="dark"] .faq-contact-section {
 }
 
 .hero.page-inner.services-hero {
-  background-position: center 45%;
+  background-position: center 42%;
   background-size: cover;
 }
 
@@ -11565,6 +11565,10 @@ html[data-color-mode="dark"] .faq-contact-section {
   .hero.page-inner.contact-hero,
   .hero.page-inner.about-hero {
     background-position: 58% center !important;
+  }
+
+  .hero.page-inner.services-hero {
+    background-position: left 42% !important;
   }
 }
 

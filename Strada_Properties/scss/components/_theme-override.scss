@@ -746,6 +746,11 @@ html[data-color-mode="dark"] .property-slider-wrap .property-nav-arrows button[d
   background-size: cover;
 }
 
+.hero.page-inner.services-hero {
+  background-position: center 42%;
+  background-size: cover;
+}
+
 .hero.page-inner.contact-hero.overlay:before,
 .hero.page-inner.about-hero.overlay:before {
   background-color: rgba(0, 0, 0, 0.36);
@@ -756,6 +761,14 @@ html[data-color-mode="dark"] .property-slider-wrap .property-nav-arrows button[d
   .hero.page-inner.about-hero {
     background-position: 58% center !important;
   }
+
+  .hero.page-inner.services-hero {
+    background-position: left 42% !important;
+  }
+}
+
+.hero.page-inner.services-hero.overlay:before {
+  background-color: rgba(0, 0, 0, 0.32);
 }
 
 .faq-hero {
