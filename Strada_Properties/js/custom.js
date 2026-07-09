@@ -1026,6 +1026,21 @@
 	}
 	tinySdlier();
 
+	var setupMobileNavbarActions = function() {
+		var nav = document.querySelector('.site-nav .site-navigation');
+
+		if (!nav || nav.querySelector('.mobile-nav-contact')) {
+			return;
+		}
+
+		var contactLink = document.createElement('a');
+		contactLink.href = 'contact.html';
+		contactLink.className = 'mobile-nav-contact d-inline-flex d-lg-none';
+		contactLink.setAttribute('aria-label', 'Contact Strada Properties');
+		contactLink.textContent = 'Contact Us';
+		nav.appendChild(contactLink);
+	};
+
 	var riversLgas = [
 		'Port Harcourt',
 		'Obio-Akpor',
@@ -1770,6 +1785,7 @@
 		}
 	};
 
+	setupMobileNavbarActions();
 	populateRiversSearchDatalist();
 	setupRiversSearchSuggestions();
 	applyRiversPropertyData();
