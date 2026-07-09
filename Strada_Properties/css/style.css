@@ -10556,7 +10556,7 @@ a:hover {
 
   .site-nav .site-navigation .logo {
     position: absolute;
-    left: calc(50% - 3px);
+    left: calc(50% - 6px);
     top: 50%;
     float: none !important;
     -webkit-transform: translate(-50%, -50%);
@@ -10565,7 +10565,7 @@ a:hover {
   }
 
   .site-nav .site-navigation .logo .logo-image {
-    width: clamp(145px, 42vw, 179px);
+    width: clamp(148px, 42vw, 182px);
     max-width: 42vw;
   }
 
