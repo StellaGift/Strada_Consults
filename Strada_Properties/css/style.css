@@ -11541,7 +11541,7 @@ html[data-color-mode="dark"] .faq-contact-section {
 }
 
 .hero.page-inner.contact-hero {
-  background-position: center 45%;
+  background-position: center center;
   background-size: cover;
 }
 
@@ -11551,7 +11551,13 @@ html[data-color-mode="dark"] .faq-contact-section {
 }
 
 .hero.page-inner.contact-hero.overlay:before {
-  background-color: rgba(0, 0, 0, 0.24);
+  background-color: rgba(0, 0, 0, 0.36);
+}
+
+@media (max-width: 767.98px) {
+  .hero.page-inner.contact-hero {
+    background-position: 58% center !important;
+  }
 }
 
 .hero.page-inner.services-hero.overlay:before {

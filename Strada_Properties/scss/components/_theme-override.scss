@@ -740,6 +740,21 @@ html[data-color-mode="dark"] .property-slider-wrap .property-nav-arrows button[d
   color: #f0d77a;
 }
 
+.hero.page-inner.contact-hero {
+  background-position: center center;
+  background-size: cover;
+}
+
+.hero.page-inner.contact-hero.overlay:before {
+  background-color: rgba(0, 0, 0, 0.36);
+}
+
+@media (max-width: 767.98px) {
+  .hero.page-inner.contact-hero {
+    background-position: 58% center !important;
+  }
+}
+
 .faq-hero {
   background-position: center center;
 }
