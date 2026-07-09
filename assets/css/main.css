@@ -515,7 +515,25 @@ h6 {
   }
 
   .mobile-nav-active .navmenu>ul {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding-top: 12px;
+  }
+
+  .mobile-nav-active .navmenu .real-estate-nav {
+    order: -1;
+    display: flex;
+    justify-content: center;
+    padding: 4px 16px 12px;
+  }
+
+  .mobile-nav-active .navmenu .real-estate-link,
+  .mobile-nav-active .navmenu .real-estate-link:focus {
+    width: fit-content;
+    min-width: 160px;
+    max-width: calc(100vw - 96px);
+    padding: 11px 18px;
   }
 }
 
