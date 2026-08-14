@@ -252,8 +252,10 @@ h6 {
     line-height: 1.15;
   }
 
-  .mobile-technology-cta span {
+  .mobile-technology-cta span,
+  .mobile-real-estate-cta span {
     display: inline-block;
+    transform: translateX(-9px);
   }
 
   .mobile-technology-cta:hover,
