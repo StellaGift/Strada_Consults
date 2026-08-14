@@ -216,7 +216,7 @@ h6 {
   .mobile-real-estate-cta,
   .mobile-real-estate-cta:focus {
     position: absolute;
-    top: 14px;
+    top: -1px;
     left: 50%;
     z-index: 998;
     display: inline-flex;
@@ -242,7 +242,7 @@ h6 {
 
   .mobile-real-estate-cta,
   .mobile-real-estate-cta:focus {
-    top: 74px;
+    top: 59px;
   }
 
   .mobile-technology-cta,
@@ -271,6 +271,22 @@ h6 {
     color: #1b181d !important;
     font-size: 15px;
     line-height: 1;
+  }
+}
+
+@media (max-width: 575px) {
+
+  .mobile-technology-cta,
+  .mobile-technology-cta:focus,
+  .mobile-real-estate-cta,
+  .mobile-real-estate-cta:focus {
+    left: auto;
+    right: 58px;
+    max-width: calc(100vw - 190px);
+    gap: 5px;
+    padding: 7px 10px;
+    font-size: 12px;
+    transform: none;
   }
 }
 
