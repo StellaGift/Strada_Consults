@@ -217,7 +217,7 @@ h6 {
   .mobile-real-estate-cta:focus {
     position: absolute;
     top: -1px;
-    left: 50%;
+    left: calc(50% - 10px);
     z-index: 998;
     display: inline-flex;
     align-items: center;
@@ -280,13 +280,13 @@ h6 {
   .mobile-technology-cta:focus,
   .mobile-real-estate-cta,
   .mobile-real-estate-cta:focus {
-    left: auto;
-    right: 58px;
+    left: calc(50% - 10px);
+    right: auto;
     max-width: calc(100vw - 190px);
     gap: 5px;
     padding: 7px 10px;
     font-size: 12px;
-    transform: none;
+    transform: translateX(-50%);
   }
 }
 
@@ -4275,6 +4275,13 @@ section,
 #header .logo {
   overflow: visible;
   transform: translateY(-10px);
+}
+
+@media (max-width: 1199px) {
+
+  #header .logo {
+    transform: translate(-5px, -10px);
+  }
 }
 
 .logo-rc {
