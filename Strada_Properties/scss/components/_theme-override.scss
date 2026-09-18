@@ -1,4 +1,4 @@
-/* Theme override: Deep Navy / Gold / White / Soft Gray */
+﻿/* Theme override: Deep Navy / Gold / White / Soft Gray */
 :root {
   --theme-navy: #0A2073;
   --theme-gold: #C6A14A;
@@ -719,6 +719,18 @@ textarea.form-control:focus {
   color: inherit !important;
 }
 
+
+.img-property-slide-wrap .img-property-slide picture,
+.img-property-slide-wrap .img-property-slide img {
+  display: block;
+}
+
+.img-property-slide-wrap .img-property-slide img {
+  width: 100%;
+  border-radius: 36px;
+  object-fit: cover;
+  object-position: center;
+}
 .property-slider-wrap .tns-nav button:before,
 .img-property-slide-wrap .tns-nav button:before,
 .testimonial-slider-wrap .tns-nav button:before {
@@ -986,4 +998,24 @@ html[data-color-mode="dark"] .faq-contact-section {
   .faq-contact-description {
     font-size: 0.98rem;
   }
+}
+
+
+/* Site-wide content image frame treatment */
+body img:not(.logo-image) {
+  border-radius: 32px !important;
+}
+
+body picture {
+  border-radius: 32px;
+}
+
+.property-item .img,
+.img-property-slide-wrap .img-property-slide,
+.img-about,
+.about-gallery-frame,
+.team-photo-frame,
+.agent-box .img {
+  overflow: hidden;
+  border-radius: 32px;
 }

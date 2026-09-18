@@ -9921,7 +9921,19 @@ textarea {
       position: relative; }
       .property-slider-wrap .tns-nav button:active, .property-slider-wrap .tns-nav button:focus, .img-property-slide-wrap .tns-nav button:active, .img-property-slide-wrap .tns-nav button:focus {
         outline: none; }
-      .property-slider-wrap .tns-nav button:before, .img-property-slide-wrap .tns-nav button:before {
+      
+.img-property-slide-wrap .img-property-slide picture,
+.img-property-slide-wrap .img-property-slide img {
+  display: block;
+}
+
+.img-property-slide-wrap .img-property-slide img {
+  width: 100%;
+  border-radius: 36px;
+  object-fit: cover;
+  object-position: center;
+}
+.property-slider-wrap .tns-nav button:before, .img-property-slide-wrap .tns-nav button:before {
         position: absolute;
         content: "";
         width: 7px;
@@ -9949,7 +9961,19 @@ textarea {
 
 .property-item .img {
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  display: block;
+  overflow: hidden;
+  border-radius: 32px;
+  background: #f4f1ea; }
+  .property-item .img img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center; }
 
 .property-item .property-content {
   background: #fff;
@@ -12070,6 +12094,18 @@ html[data-color-mode="dark"] .property-slider-wrap .property-nav-arrows button:f
   color: inherit !important;
 }
 
+
+.img-property-slide-wrap .img-property-slide picture,
+.img-property-slide-wrap .img-property-slide img {
+  display: block;
+}
+
+.img-property-slide-wrap .img-property-slide img {
+  width: 100%;
+  border-radius: 36px;
+  object-fit: cover;
+  object-position: center;
+}
 .property-slider-wrap .tns-nav button:before,
 .img-property-slide-wrap .tns-nav button:before,
 .testimonial-slider-wrap .tns-nav button:before {
@@ -12813,3 +12849,23 @@ html[data-color-mode="dark"] .team-photo-frame .team-photo {
           box-shadow: none;
 }
 
+
+
+/* Site-wide content image frame treatment */
+body img:not(.logo-image) {
+  border-radius: 32px !important;
+}
+
+body picture {
+  border-radius: 32px;
+}
+
+.property-item .img,
+.img-property-slide-wrap .img-property-slide,
+.img-about,
+.about-gallery-frame,
+.team-photo-frame,
+.agent-box .img {
+  overflow: hidden;
+  border-radius: 32px;
+}

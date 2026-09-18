@@ -1,4 +1,4 @@
-
+﻿
 .menu-bg-wrap {
 	background-color: #005555;
 	padding: 20px 30px;
@@ -328,6 +328,17 @@
 	.img {
 		position: relative;
 		z-index: 1;
+		display: block;
+		overflow: hidden;
+		border-radius: 32px;
+		background: #f4f1ea;
+		img {
+			display: block;
+			width: 100%;
+			aspect-ratio: 4 / 3;
+			object-fit: cover;
+			object-position: center;
+		}
 	}
 	.property-content {
 		background: $white;
@@ -851,3 +862,4 @@ nav[aria-label="breadcrumb"] {
 		font-size: 14px;
 	}
 }
+

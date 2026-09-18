@@ -151,10 +151,10 @@
                                      },
     "images/listing1-1.png":  {
                                   "width":  810,
-                                  "height":  1080,
+                                  "height":  516,
                                   "fallback":  "images/responsive/listing1-1-810.webp",
                                   "fallbackSrcset":  "images/responsive/listing1-1-360.webp 360w, images/responsive/listing1-1-540.webp 540w, images/responsive/listing1-1-720.webp 720w, images/responsive/listing1-1-810.webp 810w",
-                                  "avifSrcset":  "images/responsive/listing1-1-360.avif 360w, images/responsive/listing1-1-540.avif 540w, images/responsive/listing1-1-720.avif 720w, images/responsive/listing1-1-810.avif 810w",
+                                  "avifSrcset":  "images/responsive/listing1-1-360.webp 360w, images/responsive/listing1-1-540.webp 540w, images/responsive/listing1-1-720.webp 720w, images/responsive/listing1-1-810.webp 810w",
                                   "fallbackExt":  "webp",
                                   "webpFallback":  "images/responsive/listing1-1-810.webp",
                                   "webpSrcset":  "images/responsive/listing1-1-360.webp 360w, images/responsive/listing1-1-540.webp 540w, images/responsive/listing1-1-720.webp 720w, images/responsive/listing1-1-810.webp 810w"
@@ -251,30 +251,30 @@
                               },
     "images/listing2-2.png":  {
                                   "width":  564,
-                                  "height":  1080,
+                                  "height":  557,
                                   "fallback":  "images/responsive/listing2-2-564.webp",
                                   "fallbackSrcset":  "images/responsive/listing2-2-360.webp 360w, images/responsive/listing2-2-540.webp 540w, images/responsive/listing2-2-564.webp 564w",
-                                  "avifSrcset":  "images/responsive/listing2-2-360.avif 360w, images/responsive/listing2-2-540.avif 540w, images/responsive/listing2-2-564.avif 564w",
+                                  "avifSrcset":  "images/responsive/listing2-2-360.webp 360w, images/responsive/listing2-2-540.webp 540w, images/responsive/listing2-2-564.webp 564w",
                                   "fallbackExt":  "webp",
                                   "webpFallback":  "images/responsive/listing2-2-564.webp",
                                   "webpSrcset":  "images/responsive/listing2-2-360.webp 360w, images/responsive/listing2-2-540.webp 540w, images/responsive/listing2-2-564.webp 564w"
                               },
     "images/listing2-3.png":  {
                                   "width":  610,
-                                  "height":  1080,
+                                  "height":  895,
                                   "fallback":  "images/responsive/listing2-3-610.webp",
                                   "fallbackSrcset":  "images/responsive/listing2-3-360.webp 360w, images/responsive/listing2-3-540.webp 540w, images/responsive/listing2-3-610.webp 610w",
-                                  "avifSrcset":  "images/responsive/listing2-3-360.avif 360w, images/responsive/listing2-3-540.avif 540w, images/responsive/listing2-3-610.avif 610w",
+                                  "avifSrcset":  "images/responsive/listing2-3-360.webp 360w, images/responsive/listing2-3-540.webp 540w, images/responsive/listing2-3-610.webp 610w",
                                   "fallbackExt":  "webp",
                                   "webpFallback":  "images/responsive/listing2-3-610.webp",
                                   "webpSrcset":  "images/responsive/listing2-3-360.webp 360w, images/responsive/listing2-3-540.webp 540w, images/responsive/listing2-3-610.webp 610w"
                               },
     "images/listing2-4.png":  {
                                   "width":  544,
-                                  "height":  1080,
+                                  "height":  724,
                                   "fallback":  "images/responsive/listing2-4-544.webp",
                                   "fallbackSrcset":  "images/responsive/listing2-4-360.webp 360w, images/responsive/listing2-4-540.webp 540w, images/responsive/listing2-4-544.webp 544w",
-                                  "avifSrcset":  "images/responsive/listing2-4-360.avif 360w, images/responsive/listing2-4-540.avif 540w, images/responsive/listing2-4-544.avif 544w",
+                                  "avifSrcset":  "images/responsive/listing2-4-360.webp 360w, images/responsive/listing2-4-540.webp 540w, images/responsive/listing2-4-544.webp 544w",
                                   "fallbackExt":  "webp",
                                   "webpFallback":  "images/responsive/listing2-4-544.webp",
                                   "webpSrcset":  "images/responsive/listing2-4-360.webp 360w, images/responsive/listing2-4-540.webp 540w, images/responsive/listing2-4-544.webp 544w"
@@ -291,10 +291,10 @@
                                 },
     "images/popular1-1.png":  {
                                   "width":  810,
-                                  "height":  1080,
+                                  "height":  1019,
                                   "fallback":  "images/responsive/popular1-1-810.webp",
                                   "fallbackSrcset":  "images/responsive/popular1-1-360.webp 360w, images/responsive/popular1-1-540.webp 540w, images/responsive/popular1-1-720.webp 720w, images/responsive/popular1-1-810.webp 810w",
-                                  "avifSrcset":  "images/responsive/popular1-1-360.avif 360w, images/responsive/popular1-1-540.avif 540w, images/responsive/popular1-1-720.avif 720w, images/responsive/popular1-1-810.avif 810w",
+                                  "avifSrcset":  "images/responsive/popular1-1-360.webp 360w, images/responsive/popular1-1-540.webp 540w, images/responsive/popular1-1-720.webp 720w, images/responsive/popular1-1-810.webp 810w",
                                   "fallbackExt":  "webp",
                                   "webpFallback":  "images/responsive/popular1-1-810.webp",
                                   "webpSrcset":  "images/responsive/popular1-1-360.webp 360w, images/responsive/popular1-1-540.webp 540w, images/responsive/popular1-1-720.webp 720w, images/responsive/popular1-1-810.webp 810w"
@@ -370,31 +370,31 @@
                                   "webpSrcset":  "images/responsive/popular1-5-360.webp 360w, images/responsive/popular1-5-540.webp 540w, images/responsive/popular1-5-720.webp 720w, images/responsive/popular1-5-810.webp 810w"
                               },
     "images/popular1-6.png":  {
-                                  "width":  810,
-                                  "height":  1080,
-                                  "fallback":  "images/responsive/popular1-6-810.webp",
-                                  "fallbackSrcset":  "images/responsive/popular1-6-360.webp 360w, images/responsive/popular1-6-540.webp 540w, images/responsive/popular1-6-720.webp 720w, images/responsive/popular1-6-810.webp 810w",
-                                  "avifSrcset":  "images/responsive/popular1-6-360.avif 360w, images/responsive/popular1-6-540.avif 540w, images/responsive/popular1-6-720.avif 720w, images/responsive/popular1-6-810.avif 810w",
+                                  "width":  775,
+                                  "height":  1055,
+                                  "fallback":  "images/responsive/popular1-6-775.webp",
+                                  "fallbackSrcset":  "images/responsive/popular1-6-360.webp 360w, images/responsive/popular1-6-540.webp 540w, images/responsive/popular1-6-720.webp 720w, images/responsive/popular1-6-775.webp 775w",
+                                  "avifSrcset":  "images/responsive/popular1-6-360.webp 360w, images/responsive/popular1-6-540.webp 540w, images/responsive/popular1-6-720.webp 720w, images/responsive/popular1-6-775.webp 775w",
                                   "fallbackExt":  "webp",
-                                  "webpFallback":  "images/responsive/popular1-6-810.webp",
-                                  "webpSrcset":  "images/responsive/popular1-6-360.webp 360w, images/responsive/popular1-6-540.webp 540w, images/responsive/popular1-6-720.webp 720w, images/responsive/popular1-6-810.webp 810w"
+                                  "webpFallback":  "images/responsive/popular1-6-775.webp",
+                                  "webpSrcset":  "images/responsive/popular1-6-360.webp 360w, images/responsive/popular1-6-540.webp 540w, images/responsive/popular1-6-720.webp 720w, images/responsive/popular1-6-775.webp 775w"
                               },
     "images/popular1-7.png":  {
                                   "width":  810,
-                                  "height":  1080,
+                                  "height":  718,
                                   "fallback":  "images/responsive/popular1-7-810.webp",
                                   "fallbackSrcset":  "images/responsive/popular1-7-360.webp 360w, images/responsive/popular1-7-540.webp 540w, images/responsive/popular1-7-720.webp 720w, images/responsive/popular1-7-810.webp 810w",
-                                  "avifSrcset":  "images/responsive/popular1-7-360.avif 360w, images/responsive/popular1-7-540.avif 540w, images/responsive/popular1-7-720.avif 720w, images/responsive/popular1-7-810.avif 810w",
+                                  "avifSrcset":  "images/responsive/popular1-7-360.webp 360w, images/responsive/popular1-7-540.webp 540w, images/responsive/popular1-7-720.webp 720w, images/responsive/popular1-7-810.webp 810w",
                                   "fallbackExt":  "webp",
                                   "webpFallback":  "images/responsive/popular1-7-810.webp",
                                   "webpSrcset":  "images/responsive/popular1-7-360.webp 360w, images/responsive/popular1-7-540.webp 540w, images/responsive/popular1-7-720.webp 720w, images/responsive/popular1-7-810.webp 810w"
                               },
     "images/popular1-8.png":  {
                                   "width":  810,
-                                  "height":  1080,
+                                  "height":  723,
                                   "fallback":  "images/responsive/popular1-8-810.webp",
                                   "fallbackSrcset":  "images/responsive/popular1-8-360.webp 360w, images/responsive/popular1-8-540.webp 540w, images/responsive/popular1-8-720.webp 720w, images/responsive/popular1-8-810.webp 810w",
-                                  "avifSrcset":  "images/responsive/popular1-8-360.avif 360w, images/responsive/popular1-8-540.avif 540w, images/responsive/popular1-8-720.avif 720w, images/responsive/popular1-8-810.avif 810w",
+                                  "avifSrcset":  "images/responsive/popular1-8-360.webp 360w, images/responsive/popular1-8-540.webp 540w, images/responsive/popular1-8-720.webp 720w, images/responsive/popular1-8-810.webp 810w",
                                   "fallbackExt":  "webp",
                                   "webpFallback":  "images/responsive/popular1-8-810.webp",
                                   "webpSrcset":  "images/responsive/popular1-8-360.webp 360w, images/responsive/popular1-8-540.webp 540w, images/responsive/popular1-8-720.webp 720w, images/responsive/popular1-8-810.webp 810w"
@@ -411,10 +411,10 @@
                               },
     "images/popular10-1.png":  {
                                    "width":  810,
-                                   "height":  1080,
+                                   "height":  837,
                                    "fallback":  "images/responsive/popular10-1-810.webp",
                                    "fallbackSrcset":  "images/responsive/popular10-1-360.webp 360w, images/responsive/popular10-1-540.webp 540w, images/responsive/popular10-1-720.webp 720w, images/responsive/popular10-1-810.webp 810w",
-                                   "avifSrcset":  "images/responsive/popular10-1-360.avif 360w, images/responsive/popular10-1-540.avif 540w, images/responsive/popular10-1-720.avif 720w, images/responsive/popular10-1-810.avif 810w",
+                                   "avifSrcset":  "images/responsive/popular10-1-360.webp 360w, images/responsive/popular10-1-540.webp 540w, images/responsive/popular10-1-720.webp 720w, images/responsive/popular10-1-810.webp 810w",
                                    "fallbackExt":  "webp",
                                    "webpFallback":  "images/responsive/popular10-1-810.webp",
                                    "webpSrcset":  "images/responsive/popular10-1-360.webp 360w, images/responsive/popular10-1-540.webp 540w, images/responsive/popular10-1-720.webp 720w, images/responsive/popular10-1-810.webp 810w"
@@ -431,10 +431,10 @@
                                 },
     "images/popular10-2.png":  {
                                    "width":  810,
-                                   "height":  1080,
+                                   "height":  881,
                                    "fallback":  "images/responsive/popular10-2-810.webp",
                                    "fallbackSrcset":  "images/responsive/popular10-2-360.webp 360w, images/responsive/popular10-2-540.webp 540w, images/responsive/popular10-2-720.webp 720w, images/responsive/popular10-2-810.webp 810w",
-                                   "avifSrcset":  "images/responsive/popular10-2-360.avif 360w, images/responsive/popular10-2-540.avif 540w, images/responsive/popular10-2-720.avif 720w, images/responsive/popular10-2-810.avif 810w",
+                                   "avifSrcset":  "images/responsive/popular10-2-360.webp 360w, images/responsive/popular10-2-540.webp 540w, images/responsive/popular10-2-720.webp 720w, images/responsive/popular10-2-810.webp 810w",
                                    "fallbackExt":  "webp",
                                    "webpFallback":  "images/responsive/popular10-2-810.webp",
                                    "webpSrcset":  "images/responsive/popular10-2-360.webp 360w, images/responsive/popular10-2-540.webp 540w, images/responsive/popular10-2-720.webp 720w, images/responsive/popular10-2-810.webp 810w"
@@ -521,10 +521,10 @@
                                 },
     "images/popular2-1.png":  {
                                   "width":  806,
-                                  "height":  1080,
+                                  "height":  881,
                                   "fallback":  "images/responsive/popular2-1-806.webp",
                                   "fallbackSrcset":  "images/responsive/popular2-1-360.webp 360w, images/responsive/popular2-1-540.webp 540w, images/responsive/popular2-1-720.webp 720w, images/responsive/popular2-1-806.webp 806w",
-                                  "avifSrcset":  "images/responsive/popular2-1-360.avif 360w, images/responsive/popular2-1-540.avif 540w, images/responsive/popular2-1-720.avif 720w, images/responsive/popular2-1-806.avif 806w",
+                                  "avifSrcset":  "images/responsive/popular2-1-360.webp 360w, images/responsive/popular2-1-540.webp 540w, images/responsive/popular2-1-720.webp 720w, images/responsive/popular2-1-806.webp 806w",
                                   "fallbackExt":  "webp",
                                   "webpFallback":  "images/responsive/popular2-1-806.webp",
                                   "webpSrcset":  "images/responsive/popular2-1-360.webp 360w, images/responsive/popular2-1-540.webp 540w, images/responsive/popular2-1-720.webp 720w, images/responsive/popular2-1-806.webp 806w"
@@ -711,10 +711,10 @@
                               },
     "images/popular4-1.png":  {
                                   "width":  838,
-                                  "height":  1080,
+                                  "height":  860,
                                   "fallback":  "images/responsive/popular4-1-838.webp",
                                   "fallbackSrcset":  "images/responsive/popular4-1-360.webp 360w, images/responsive/popular4-1-540.webp 540w, images/responsive/popular4-1-720.webp 720w, images/responsive/popular4-1-838.webp 838w",
-                                  "avifSrcset":  "images/responsive/popular4-1-360.avif 360w, images/responsive/popular4-1-540.avif 540w, images/responsive/popular4-1-720.avif 720w, images/responsive/popular4-1-838.avif 838w",
+                                  "avifSrcset":  "images/responsive/popular4-1-360.webp 360w, images/responsive/popular4-1-540.webp 540w, images/responsive/popular4-1-720.webp 720w, images/responsive/popular4-1-838.webp 838w",
                                   "fallbackExt":  "webp",
                                   "webpFallback":  "images/responsive/popular4-1-838.webp",
                                   "webpSrcset":  "images/responsive/popular4-1-360.webp 360w, images/responsive/popular4-1-540.webp 540w, images/responsive/popular4-1-720.webp 720w, images/responsive/popular4-1-838.webp 838w"
@@ -791,70 +791,70 @@
                               },
     "images/popular5-010.png":  {
                                     "width":  642,
-                                    "height":  1080,
+                                    "height":  992,
                                     "fallback":  "images/responsive/popular5-010-642.webp",
                                     "fallbackSrcset":  "images/responsive/popular5-010-360.webp 360w, images/responsive/popular5-010-540.webp 540w, images/responsive/popular5-010-642.webp 642w",
-                                    "avifSrcset":  "images/responsive/popular5-010-360.avif 360w, images/responsive/popular5-010-540.avif 540w, images/responsive/popular5-010-642.avif 642w",
+                                    "avifSrcset":  "images/responsive/popular5-010-360.webp 360w, images/responsive/popular5-010-540.webp 540w, images/responsive/popular5-010-642.webp 642w",
                                     "fallbackExt":  "webp",
                                     "webpFallback":  "images/responsive/popular5-010-642.webp",
                                     "webpSrcset":  "images/responsive/popular5-010-360.webp 360w, images/responsive/popular5-010-540.webp 540w, images/responsive/popular5-010-642.webp 642w"
                                 },
     "images/popular5-011.png":  {
                                     "width":  686,
-                                    "height":  1080,
+                                    "height":  668,
                                     "fallback":  "images/responsive/popular5-011-686.webp",
                                     "fallbackSrcset":  "images/responsive/popular5-011-360.webp 360w, images/responsive/popular5-011-540.webp 540w, images/responsive/popular5-011-686.webp 686w",
-                                    "avifSrcset":  "images/responsive/popular5-011-360.avif 360w, images/responsive/popular5-011-540.avif 540w, images/responsive/popular5-011-686.avif 686w",
+                                    "avifSrcset":  "images/responsive/popular5-011-360.webp 360w, images/responsive/popular5-011-540.webp 540w, images/responsive/popular5-011-686.webp 686w",
                                     "fallbackExt":  "webp",
                                     "webpFallback":  "images/responsive/popular5-011-686.webp",
                                     "webpSrcset":  "images/responsive/popular5-011-360.webp 360w, images/responsive/popular5-011-540.webp 540w, images/responsive/popular5-011-686.webp 686w"
                                 },
     "images/popular5-012.png":  {
                                     "width":  687,
-                                    "height":  1080,
+                                    "height":  743,
                                     "fallback":  "images/responsive/popular5-012-687.webp",
                                     "fallbackSrcset":  "images/responsive/popular5-012-360.webp 360w, images/responsive/popular5-012-540.webp 540w, images/responsive/popular5-012-687.webp 687w",
-                                    "avifSrcset":  "images/responsive/popular5-012-360.avif 360w, images/responsive/popular5-012-540.avif 540w, images/responsive/popular5-012-687.avif 687w",
+                                    "avifSrcset":  "images/responsive/popular5-012-360.webp 360w, images/responsive/popular5-012-540.webp 540w, images/responsive/popular5-012-687.webp 687w",
                                     "fallbackExt":  "webp",
                                     "webpFallback":  "images/responsive/popular5-012-687.webp",
                                     "webpSrcset":  "images/responsive/popular5-012-360.webp 360w, images/responsive/popular5-012-540.webp 540w, images/responsive/popular5-012-687.webp 687w"
                                 },
     "images/popular5-1.png":  {
                                   "width":  769,
-                                  "height":  1080,
+                                  "height":  722,
                                   "fallback":  "images/responsive/popular5-1-769.webp",
                                   "fallbackSrcset":  "images/responsive/popular5-1-360.webp 360w, images/responsive/popular5-1-540.webp 540w, images/responsive/popular5-1-720.webp 720w, images/responsive/popular5-1-769.webp 769w",
-                                  "avifSrcset":  "images/responsive/popular5-1-360.avif 360w, images/responsive/popular5-1-540.avif 540w, images/responsive/popular5-1-720.avif 720w, images/responsive/popular5-1-769.avif 769w",
+                                  "avifSrcset":  "images/responsive/popular5-1-360.webp 360w, images/responsive/popular5-1-540.webp 540w, images/responsive/popular5-1-720.webp 720w, images/responsive/popular5-1-769.webp 769w",
                                   "fallbackExt":  "webp",
                                   "webpFallback":  "images/responsive/popular5-1-769.webp",
                                   "webpSrcset":  "images/responsive/popular5-1-360.webp 360w, images/responsive/popular5-1-540.webp 540w, images/responsive/popular5-1-720.webp 720w, images/responsive/popular5-1-769.webp 769w"
                               },
     "images/popular5-2.png":  {
                                   "width":  752,
-                                  "height":  1080,
+                                  "height":  950,
                                   "fallback":  "images/responsive/popular5-2-752.webp",
                                   "fallbackSrcset":  "images/responsive/popular5-2-360.webp 360w, images/responsive/popular5-2-540.webp 540w, images/responsive/popular5-2-720.webp 720w, images/responsive/popular5-2-752.webp 752w",
-                                  "avifSrcset":  "images/responsive/popular5-2-360.avif 360w, images/responsive/popular5-2-540.avif 540w, images/responsive/popular5-2-720.avif 720w, images/responsive/popular5-2-752.avif 752w",
+                                  "avifSrcset":  "images/responsive/popular5-2-360.webp 360w, images/responsive/popular5-2-540.webp 540w, images/responsive/popular5-2-720.webp 720w, images/responsive/popular5-2-752.webp 752w",
                                   "fallbackExt":  "webp",
                                   "webpFallback":  "images/responsive/popular5-2-752.webp",
                                   "webpSrcset":  "images/responsive/popular5-2-360.webp 360w, images/responsive/popular5-2-540.webp 540w, images/responsive/popular5-2-720.webp 720w, images/responsive/popular5-2-752.webp 752w"
                               },
     "images/popular5-3.png":  {
                                   "width":  609,
-                                  "height":  1080,
+                                  "height":  873,
                                   "fallback":  "images/responsive/popular5-3-609.webp",
                                   "fallbackSrcset":  "images/responsive/popular5-3-360.webp 360w, images/responsive/popular5-3-540.webp 540w, images/responsive/popular5-3-609.webp 609w",
-                                  "avifSrcset":  "images/responsive/popular5-3-360.avif 360w, images/responsive/popular5-3-540.avif 540w, images/responsive/popular5-3-609.avif 609w",
+                                  "avifSrcset":  "images/responsive/popular5-3-360.webp 360w, images/responsive/popular5-3-540.webp 540w, images/responsive/popular5-3-609.webp 609w",
                                   "fallbackExt":  "webp",
                                   "webpFallback":  "images/responsive/popular5-3-609.webp",
                                   "webpSrcset":  "images/responsive/popular5-3-360.webp 360w, images/responsive/popular5-3-540.webp 540w, images/responsive/popular5-3-609.webp 609w"
                               },
     "images/popular5-4.png":  {
                                   "width":  689,
-                                  "height":  1080,
+                                  "height":  986,
                                   "fallback":  "images/responsive/popular5-4-689.webp",
                                   "fallbackSrcset":  "images/responsive/popular5-4-360.webp 360w, images/responsive/popular5-4-540.webp 540w, images/responsive/popular5-4-689.webp 689w",
-                                  "avifSrcset":  "images/responsive/popular5-4-360.avif 360w, images/responsive/popular5-4-540.avif 540w, images/responsive/popular5-4-689.avif 689w",
+                                  "avifSrcset":  "images/responsive/popular5-4-360.webp 360w, images/responsive/popular5-4-540.webp 540w, images/responsive/popular5-4-689.webp 689w",
                                   "fallbackExt":  "webp",
                                   "webpFallback":  "images/responsive/popular5-4-689.webp",
                                   "webpSrcset":  "images/responsive/popular5-4-360.webp 360w, images/responsive/popular5-4-540.webp 540w, images/responsive/popular5-4-689.webp 689w"
@@ -901,20 +901,20 @@
                               },
     "images/popular5-9.png":  {
                                   "width":  689,
-                                  "height":  1080,
+                                  "height":  598,
                                   "fallback":  "images/responsive/popular5-9-689.webp",
                                   "fallbackSrcset":  "images/responsive/popular5-9-360.webp 360w, images/responsive/popular5-9-540.webp 540w, images/responsive/popular5-9-689.webp 689w",
-                                  "avifSrcset":  "images/responsive/popular5-9-360.avif 360w, images/responsive/popular5-9-540.avif 540w, images/responsive/popular5-9-689.avif 689w",
+                                  "avifSrcset":  "images/responsive/popular5-9-360.webp 360w, images/responsive/popular5-9-540.webp 540w, images/responsive/popular5-9-689.webp 689w",
                                   "fallbackExt":  "webp",
                                   "webpFallback":  "images/responsive/popular5-9-689.webp",
                                   "webpSrcset":  "images/responsive/popular5-9-360.webp 360w, images/responsive/popular5-9-540.webp 540w, images/responsive/popular5-9-689.webp 689w"
                               },
     "images/popular6-1.png":  {
                                   "width":  608,
-                                  "height":  1080,
+                                  "height":  471,
                                   "fallback":  "images/responsive/popular6-1-608.webp",
                                   "fallbackSrcset":  "images/responsive/popular6-1-360.webp 360w, images/responsive/popular6-1-540.webp 540w, images/responsive/popular6-1-608.webp 608w",
-                                  "avifSrcset":  "images/responsive/popular6-1-360.avif 360w, images/responsive/popular6-1-540.avif 540w, images/responsive/popular6-1-608.avif 608w",
+                                  "avifSrcset":  "images/responsive/popular6-1-360.webp 360w, images/responsive/popular6-1-540.webp 540w, images/responsive/popular6-1-608.webp 608w",
                                   "fallbackExt":  "webp",
                                   "webpFallback":  "images/responsive/popular6-1-608.webp",
                                   "webpSrcset":  "images/responsive/popular6-1-360.webp 360w, images/responsive/popular6-1-540.webp 540w, images/responsive/popular6-1-608.webp 608w"
@@ -1001,10 +1001,10 @@
                                },
     "images/popular6-2.png":  {
                                   "width":  609,
-                                  "height":  1080,
+                                  "height":  1052,
                                   "fallback":  "images/responsive/popular6-2-609.webp",
                                   "fallbackSrcset":  "images/responsive/popular6-2-360.webp 360w, images/responsive/popular6-2-540.webp 540w, images/responsive/popular6-2-609.webp 609w",
-                                  "avifSrcset":  "images/responsive/popular6-2-360.avif 360w, images/responsive/popular6-2-540.avif 540w, images/responsive/popular6-2-609.avif 609w",
+                                  "avifSrcset":  "images/responsive/popular6-2-360.webp 360w, images/responsive/popular6-2-540.webp 540w, images/responsive/popular6-2-609.webp 609w",
                                   "fallbackExt":  "webp",
                                   "webpFallback":  "images/responsive/popular6-2-609.webp",
                                   "webpSrcset":  "images/responsive/popular6-2-360.webp 360w, images/responsive/popular6-2-540.webp 540w, images/responsive/popular6-2-609.webp 609w"
@@ -1081,10 +1081,10 @@
                               },
     "images/popular7-1.png":  {
                                   "width":  810,
-                                  "height":  1080,
+                                  "height":  804,
                                   "fallback":  "images/responsive/popular7-1-810.webp",
                                   "fallbackSrcset":  "images/responsive/popular7-1-360.webp 360w, images/responsive/popular7-1-540.webp 540w, images/responsive/popular7-1-720.webp 720w, images/responsive/popular7-1-810.webp 810w",
-                                  "avifSrcset":  "images/responsive/popular7-1-360.avif 360w, images/responsive/popular7-1-540.avif 540w, images/responsive/popular7-1-720.avif 720w, images/responsive/popular7-1-810.avif 810w",
+                                  "avifSrcset":  "images/responsive/popular7-1-360.webp 360w, images/responsive/popular7-1-540.webp 540w, images/responsive/popular7-1-720.webp 720w, images/responsive/popular7-1-810.webp 810w",
                                   "fallbackExt":  "webp",
                                   "webpFallback":  "images/responsive/popular7-1-810.webp",
                                   "webpSrcset":  "images/responsive/popular7-1-360.webp 360w, images/responsive/popular7-1-540.webp 540w, images/responsive/popular7-1-720.webp 720w, images/responsive/popular7-1-810.webp 810w"
@@ -1161,30 +1161,30 @@
                                },
     "images/popular7-17.png":  {
                                    "width":  810,
-                                   "height":  1080,
+                                   "height":  881,
                                    "fallback":  "images/responsive/popular7-17-810.webp",
                                    "fallbackSrcset":  "images/responsive/popular7-17-360.webp 360w, images/responsive/popular7-17-540.webp 540w, images/responsive/popular7-17-720.webp 720w, images/responsive/popular7-17-810.webp 810w",
-                                   "avifSrcset":  "images/responsive/popular7-17-360.avif 360w, images/responsive/popular7-17-540.avif 540w, images/responsive/popular7-17-720.avif 720w, images/responsive/popular7-17-810.avif 810w",
+                                   "avifSrcset":  "images/responsive/popular7-17-360.webp 360w, images/responsive/popular7-17-540.webp 540w, images/responsive/popular7-17-720.webp 720w, images/responsive/popular7-17-810.webp 810w",
                                    "fallbackExt":  "webp",
                                    "webpFallback":  "images/responsive/popular7-17-810.webp",
                                    "webpSrcset":  "images/responsive/popular7-17-360.webp 360w, images/responsive/popular7-17-540.webp 540w, images/responsive/popular7-17-720.webp 720w, images/responsive/popular7-17-810.webp 810w"
                                },
     "images/popular7-18.png":  {
                                    "width":  810,
-                                   "height":  1080,
+                                   "height":  907,
                                    "fallback":  "images/responsive/popular7-18-810.webp",
                                    "fallbackSrcset":  "images/responsive/popular7-18-360.webp 360w, images/responsive/popular7-18-540.webp 540w, images/responsive/popular7-18-720.webp 720w, images/responsive/popular7-18-810.webp 810w",
-                                   "avifSrcset":  "images/responsive/popular7-18-360.avif 360w, images/responsive/popular7-18-540.avif 540w, images/responsive/popular7-18-720.avif 720w, images/responsive/popular7-18-810.avif 810w",
+                                   "avifSrcset":  "images/responsive/popular7-18-360.webp 360w, images/responsive/popular7-18-540.webp 540w, images/responsive/popular7-18-720.webp 720w, images/responsive/popular7-18-810.webp 810w",
                                    "fallbackExt":  "webp",
                                    "webpFallback":  "images/responsive/popular7-18-810.webp",
                                    "webpSrcset":  "images/responsive/popular7-18-360.webp 360w, images/responsive/popular7-18-540.webp 540w, images/responsive/popular7-18-720.webp 720w, images/responsive/popular7-18-810.webp 810w"
                                },
     "images/popular7-2.png":  {
                                   "width":  810,
-                                  "height":  1080,
+                                  "height":  746,
                                   "fallback":  "images/responsive/popular7-2-810.webp",
                                   "fallbackSrcset":  "images/responsive/popular7-2-360.webp 360w, images/responsive/popular7-2-540.webp 540w, images/responsive/popular7-2-720.webp 720w, images/responsive/popular7-2-810.webp 810w",
-                                  "avifSrcset":  "images/responsive/popular7-2-360.avif 360w, images/responsive/popular7-2-540.avif 540w, images/responsive/popular7-2-720.avif 720w, images/responsive/popular7-2-810.avif 810w",
+                                  "avifSrcset":  "images/responsive/popular7-2-360.webp 360w, images/responsive/popular7-2-540.webp 540w, images/responsive/popular7-2-720.webp 720w, images/responsive/popular7-2-810.webp 810w",
                                   "fallbackExt":  "webp",
                                   "webpFallback":  "images/responsive/popular7-2-810.webp",
                                   "webpSrcset":  "images/responsive/popular7-2-360.webp 360w, images/responsive/popular7-2-540.webp 540w, images/responsive/popular7-2-720.webp 720w, images/responsive/popular7-2-810.webp 810w"
@@ -1351,30 +1351,30 @@
                                },
     "images/popular8-18.png":  {
                                    "width":  576,
-                                   "height":  1024,
+                                   "height":  830,
                                    "fallback":  "images/responsive/popular8-18-576.webp",
                                    "fallbackSrcset":  "images/responsive/popular8-18-360.webp 360w, images/responsive/popular8-18-540.webp 540w, images/responsive/popular8-18-576.webp 576w",
-                                   "avifSrcset":  "images/responsive/popular8-18-360.avif 360w, images/responsive/popular8-18-540.avif 540w, images/responsive/popular8-18-576.avif 576w",
+                                   "avifSrcset":  "images/responsive/popular8-18-360.webp 360w, images/responsive/popular8-18-540.webp 540w, images/responsive/popular8-18-576.webp 576w",
                                    "fallbackExt":  "webp",
                                    "webpFallback":  "images/responsive/popular8-18-576.webp",
                                    "webpSrcset":  "images/responsive/popular8-18-360.webp 360w, images/responsive/popular8-18-540.webp 540w, images/responsive/popular8-18-576.webp 576w"
                                },
     "images/popular8-19.png":  {
                                    "width":  576,
-                                   "height":  1024,
+                                   "height":  898,
                                    "fallback":  "images/responsive/popular8-19-576.webp",
                                    "fallbackSrcset":  "images/responsive/popular8-19-360.webp 360w, images/responsive/popular8-19-540.webp 540w, images/responsive/popular8-19-576.webp 576w",
-                                   "avifSrcset":  "images/responsive/popular8-19-360.avif 360w, images/responsive/popular8-19-540.avif 540w, images/responsive/popular8-19-576.avif 576w",
+                                   "avifSrcset":  "images/responsive/popular8-19-360.webp 360w, images/responsive/popular8-19-540.webp 540w, images/responsive/popular8-19-576.webp 576w",
                                    "fallbackExt":  "webp",
                                    "webpFallback":  "images/responsive/popular8-19-576.webp",
                                    "webpSrcset":  "images/responsive/popular8-19-360.webp 360w, images/responsive/popular8-19-540.webp 540w, images/responsive/popular8-19-576.webp 576w"
                                },
     "images/popular8-2.png":  {
                                   "width":  576,
-                                  "height":  900,
+                                  "height":  785,
                                   "fallback":  "images/responsive/popular8-2-576.webp",
                                   "fallbackSrcset":  "images/responsive/popular8-2-360.webp 360w, images/responsive/popular8-2-540.webp 540w, images/responsive/popular8-2-576.webp 576w",
-                                  "avifSrcset":  "images/responsive/popular8-2-360.avif 360w, images/responsive/popular8-2-540.avif 540w, images/responsive/popular8-2-576.avif 576w",
+                                  "avifSrcset":  "images/responsive/popular8-2-360.webp 360w, images/responsive/popular8-2-540.webp 540w, images/responsive/popular8-2-576.webp 576w",
                                   "fallbackExt":  "webp",
                                   "webpFallback":  "images/responsive/popular8-2-576.webp",
                                   "webpSrcset":  "images/responsive/popular8-2-360.webp 360w, images/responsive/popular8-2-540.webp 540w, images/responsive/popular8-2-576.webp 576w"
@@ -1451,20 +1451,20 @@
                               },
     "images/popular9-1.png":  {
                                   "width":  810,
-                                  "height":  1080,
+                                  "height":  881,
                                   "fallback":  "images/responsive/popular9-1-810.webp",
                                   "fallbackSrcset":  "images/responsive/popular9-1-360.webp 360w, images/responsive/popular9-1-540.webp 540w, images/responsive/popular9-1-720.webp 720w, images/responsive/popular9-1-810.webp 810w",
-                                  "avifSrcset":  "images/responsive/popular9-1-360.avif 360w, images/responsive/popular9-1-540.avif 540w, images/responsive/popular9-1-720.avif 720w, images/responsive/popular9-1-810.avif 810w",
+                                  "avifSrcset":  "images/responsive/popular9-1-360.webp 360w, images/responsive/popular9-1-540.webp 540w, images/responsive/popular9-1-720.webp 720w, images/responsive/popular9-1-810.webp 810w",
                                   "fallbackExt":  "webp",
                                   "webpFallback":  "images/responsive/popular9-1-810.webp",
                                   "webpSrcset":  "images/responsive/popular9-1-360.webp 360w, images/responsive/popular9-1-540.webp 540w, images/responsive/popular9-1-720.webp 720w, images/responsive/popular9-1-810.webp 810w"
                               },
     "images/popular9-10.png":  {
                                    "width":  588,
-                                   "height":  1080,
+                                   "height":  714,
                                    "fallback":  "images/responsive/popular9-10-588.webp",
                                    "fallbackSrcset":  "images/responsive/popular9-10-360.webp 360w, images/responsive/popular9-10-540.webp 540w, images/responsive/popular9-10-588.webp 588w",
-                                   "avifSrcset":  "images/responsive/popular9-10-360.avif 360w, images/responsive/popular9-10-540.avif 540w, images/responsive/popular9-10-588.avif 588w",
+                                   "avifSrcset":  "images/responsive/popular9-10-360.webp 360w, images/responsive/popular9-10-540.webp 540w, images/responsive/popular9-10-588.webp 588w",
                                    "fallbackExt":  "webp",
                                    "webpFallback":  "images/responsive/popular9-10-588.webp",
                                    "webpSrcset":  "images/responsive/popular9-10-360.webp 360w, images/responsive/popular9-10-540.webp 540w, images/responsive/popular9-10-588.webp 588w"
@@ -1518,5 +1518,15 @@
                                    "fallbackExt":  "webp",
                                    "webpFallback":  "images/responsive/popular9-15-687.webp",
                                    "webpSrcset":  "images/responsive/popular9-15-360.webp 360w, images/responsive/popular9-15-540.webp 540w, images/responsive/popular9-15-687.webp 687w"
-                               }
+                               },
+    "images/popular9-2.png":  {
+                                  "width":  781,
+                                  "height":  928,
+                                  "fallback":  "images/responsive/popular9-2-781.webp",
+                                  "fallbackSrcset":  "images/responsive/popular9-2-360.webp 360w, images/responsive/popular9-2-540.webp 540w, images/responsive/popular9-2-720.webp 720w, images/responsive/popular9-2-781.webp 781w",
+                                  "avifSrcset":  "images/responsive/popular9-2-360.webp 360w, images/responsive/popular9-2-540.webp 540w, images/responsive/popular9-2-720.webp 720w, images/responsive/popular9-2-781.webp 781w",
+                                  "fallbackExt":  "webp",
+                                  "webpFallback":  "images/responsive/popular9-2-781.webp",
+                                  "webpSrcset":  "images/responsive/popular9-2-360.webp 360w, images/responsive/popular9-2-540.webp 540w, images/responsive/popular9-2-720.webp 720w, images/responsive/popular9-2-781.webp 781w"
+                              }
 }
