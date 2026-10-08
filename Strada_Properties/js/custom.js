@@ -904,6 +904,72 @@
 	renderConfiguredPropertySections();
 	
 
+
+	var setupPropertyImageViewer = function() {
+		var galleryItems = document.querySelectorAll('[data-property-image-viewer]');
+		var viewer;
+		var viewerImage;
+		var viewerClose;
+
+		if (galleryItems.length === 0) {
+			return;
+		}
+
+		viewer = document.createElement('div');
+		viewer.className = 'property-image-viewer';
+		viewer.setAttribute('aria-hidden', 'true');
+		viewer.innerHTML = '<div class="property-image-viewer-backdrop" data-property-image-close></div>' +
+			'<div class="property-image-viewer-dialog" role="dialog" aria-modal="true" aria-label="Property image preview">' +
+			'<button type="button" class="property-image-viewer-close" data-property-image-close aria-label="Close image preview">&times;</button>' +
+			'<img src="" alt="" />' +
+			'</div>';
+
+		document.body.appendChild(viewer);
+
+		viewerImage = viewer.querySelector('img');
+		viewerClose = viewer.querySelector('.property-image-viewer-close');
+
+		var closeViewer = function() {
+			viewer.classList.remove('is-open');
+			viewer.setAttribute('aria-hidden', 'true');
+			document.body.classList.remove('property-image-viewer-open');
+			viewerImage.removeAttribute('src');
+		};
+
+		var openViewer = function(item) {
+			var image = item.querySelector('img');
+
+			if (!image) {
+				return;
+			}
+
+			viewerImage.src = item.getAttribute('href') || image.currentSrc || image.src;
+			viewerImage.alt = image.getAttribute('alt') || 'Property image';
+			viewer.classList.add('is-open');
+			viewer.setAttribute('aria-hidden', 'false');
+			document.body.classList.add('property-image-viewer-open');
+			viewerClose.focus();
+		};
+
+		for (var i = 0; i < galleryItems.length; i++) {
+			galleryItems[i].addEventListener('click', function(event) {
+				event.preventDefault();
+				openViewer(this);
+			});
+		}
+
+		viewer.addEventListener('click', function(event) {
+			if (event.target.hasAttribute('data-property-image-close')) {
+				closeViewer();
+			}
+		});
+
+		document.addEventListener('keydown', function(event) {
+			if (event.key === 'Escape' && viewer.classList.contains('is-open')) {
+				closeViewer();
+			}
+		});
+	};
 	var tinySdlier = function() {
 
 		var heroSlider = document.querySelectorAll('.hero-slide');
@@ -1025,6 +1091,7 @@
 		}
 	}
 	tinySdlier();
+	setupPropertyImageViewer();
 
 	var setupMobileNavbarActions = function() {
 		var nav = document.querySelector('.site-nav .site-navigation');
@@ -1797,5 +1864,6 @@
 
 
 })()
+
 
 
