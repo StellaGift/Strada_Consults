@@ -910,6 +910,10 @@
 		var viewer;
 		var viewerImage;
 		var viewerClose;
+		var viewerPrev;
+		var viewerNext;
+		var viewerCount;
+		var activeIndex = 0;
 
 		if (galleryItems.length === 0) {
 			return;
@@ -920,14 +924,42 @@
 		viewer.setAttribute('aria-hidden', 'true');
 		viewer.innerHTML = '<div class="property-image-viewer-backdrop" data-property-image-close></div>' +
 			'<div class="property-image-viewer-dialog" role="dialog" aria-modal="true" aria-label="Property image preview">' +
+			'<div class="property-image-viewer-toolbar">' +
+			'<span class="property-image-viewer-count" aria-live="polite"></span>' +
 			'<button type="button" class="property-image-viewer-close" data-property-image-close aria-label="Close image preview">&times;</button>' +
+			'</div>' +
+			'<button type="button" class="property-image-viewer-nav property-image-viewer-prev" data-property-image-prev aria-label="Previous image">&#8249;</button>' +
 			'<img src="" alt="" />' +
+			'<button type="button" class="property-image-viewer-nav property-image-viewer-next" data-property-image-next aria-label="Next image">&#8250;</button>' +
 			'</div>';
 
 		document.body.appendChild(viewer);
 
 		viewerImage = viewer.querySelector('img');
 		viewerClose = viewer.querySelector('.property-image-viewer-close');
+		viewerPrev = viewer.querySelector('[data-property-image-prev]');
+		viewerNext = viewer.querySelector('[data-property-image-next]');
+		viewerCount = viewer.querySelector('.property-image-viewer-count');
+
+		var updateViewerImage = function(index) {
+			var item = galleryItems[index];
+			var image;
+
+			if (!item) {
+				return;
+			}
+
+			image = item.querySelector('img');
+
+			if (!image) {
+				return;
+			}
+
+			activeIndex = index;
+			viewerImage.src = item.getAttribute('href') || image.currentSrc || image.src;
+			viewerImage.alt = image.getAttribute('alt') || 'Property image';
+			viewerCount.textContent = (activeIndex + 1) + ' / ' + galleryItems.length;
+		};
 
 		var closeViewer = function() {
 			viewer.classList.remove('is-open');
@@ -936,26 +968,31 @@
 			viewerImage.removeAttribute('src');
 		};
 
-		var openViewer = function(item) {
-			var image = item.querySelector('img');
-
-			if (!image) {
-				return;
-			}
-
-			viewerImage.src = item.getAttribute('href') || image.currentSrc || image.src;
-			viewerImage.alt = image.getAttribute('alt') || 'Property image';
+		var openViewer = function(index) {
+			updateViewerImage(index);
 			viewer.classList.add('is-open');
 			viewer.setAttribute('aria-hidden', 'false');
 			document.body.classList.add('property-image-viewer-open');
 			viewerClose.focus();
 		};
 
+		var showPreviousImage = function() {
+			var nextIndex = activeIndex === 0 ? galleryItems.length - 1 : activeIndex - 1;
+			updateViewerImage(nextIndex);
+		};
+
+		var showNextImage = function() {
+			var nextIndex = activeIndex === galleryItems.length - 1 ? 0 : activeIndex + 1;
+			updateViewerImage(nextIndex);
+		};
+
 		for (var i = 0; i < galleryItems.length; i++) {
-			galleryItems[i].addEventListener('click', function(event) {
-				event.preventDefault();
-				openViewer(this);
-			});
+			(function(index) {
+				galleryItems[index].addEventListener('click', function(event) {
+					event.preventDefault();
+					openViewer(index);
+				});
+			})(i);
 		}
 
 		viewer.addEventListener('click', function(event) {
@@ -964,9 +1001,27 @@
 			}
 		});
 
+		viewerPrev.addEventListener('click', function(event) {
+			event.preventDefault();
+			showPreviousImage();
+		});
+
+		viewerNext.addEventListener('click', function(event) {
+			event.preventDefault();
+			showNextImage();
+		});
+
 		document.addEventListener('keydown', function(event) {
-			if (event.key === 'Escape' && viewer.classList.contains('is-open')) {
+			if (!viewer.classList.contains('is-open')) {
+				return;
+			}
+
+			if (event.key === 'Escape') {
 				closeViewer();
+			} else if (event.key === 'ArrowLeft') {
+				showPreviousImage();
+			} else if (event.key === 'ArrowRight') {
+				showNextImage();
 			}
 		});
 	};
@@ -1864,6 +1919,7 @@
 
 
 })()
+
 
 
 
