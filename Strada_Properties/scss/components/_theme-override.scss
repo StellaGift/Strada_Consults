@@ -1248,7 +1248,7 @@ body picture {
   }
 
   .property-image-viewer {
-    padding: 58px 12px 66px;
+    padding: 58px 12px;
   }
 
   .property-image-viewer-dialog {
@@ -1274,22 +1274,22 @@ body picture {
   }
 
   .property-image-viewer-nav {
-    top: auto;
-    bottom: -54px;
+    top: 50%;
+    bottom: auto;
     width: 44px;
     height: 44px;
     font-size: 32px;
-    -webkit-transform: none;
-        -ms-transform: none;
-            transform: none;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
   }
 
   .property-image-viewer-prev {
-    left: calc(50% - 58px);
+    left: -10px;
   }
 
   .property-image-viewer-next {
-    right: calc(50% - 58px);
+    right: -10px;
   }
 }
 

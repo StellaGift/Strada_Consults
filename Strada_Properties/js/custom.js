@@ -917,8 +917,27 @@
 			return;
 		}
 
+		var directParagraphs = sidebar.querySelectorAll(':scope > p');
+		var landSize = null;
+		var titleDocument = null;
+		for (var p = 0; p < directParagraphs.length; p++) {
+			var label = directParagraphs[p].querySelector('strong');
+			if (!label) {
+				continue;
+			}
+			if (/^land\s*size\s*:/i.test(label.textContent.trim())) {
+				landSize = directParagraphs[p];
+			} else if (/^title\s*:/i.test(label.textContent.trim())) {
+				titleDocument = directParagraphs[p];
+			}
+		}
+
 		items = [
 			sidebar.querySelector(':scope > .heading'),
+			sidebar.querySelector(':scope > p.meta'),
+			sidebar.querySelector(':scope > p.h3'),
+			landSize,
+			titleDocument,
 			sidebar.querySelector(':scope > .specs'),
 			sidebar.querySelector(':scope > .agent-box')
 		];
