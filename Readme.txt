@@ -1,7 +1,7 @@
 # Strada Consults and Services Limited Website
 
 This repository contains the custom-built website for Strada Consults and Services Limited.
-It presents the company's technology, cybersecurity, real estate, and professional consulting offerings.
+It presents the company's technology, cybersecurity, real estate, and professional consulting offerings. The technology and property practices each have a separately deployable child website.
 
 ## Project Overview
 
@@ -45,6 +45,8 @@ The site is a static, multi-page marketing website with:
 - `starter-page.html` - Starter template page
 - `terms-of-service.html` - Terms page
 - `privacy-policy.html` - Privacy policy page
+- `Strada_Technology/` - Independent static technology and digital solutions website
+- `Strada_Properties/` - Independent static real estate website
 - `assets/css/main.css` - Main stylesheet
 - `assets/js/main.js` - Main scripts (nav, FAQ toggle, interactions)
 - `assets/img/` - Site images and graphics
@@ -93,7 +95,7 @@ Deploy as a static website to any host, such as:
 - cPanel shared hosting
 - Nginx/Apache server
 
-Upload all files while preserving the folder structure (`assets/`, `forms/`, and root HTML files).
+Upload all files while preserving the folder structure (`assets/`, `forms/`, child website folders, and root HTML files). To deploy either child website on its own, set its folder as the static site's publish/root directory.
 
 ## Notes
 
