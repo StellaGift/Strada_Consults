@@ -1,4 +1,4 @@
-﻿/* Theme override: Deep Navy / Gold / White / Soft Gray */
+/* Theme override: Deep Navy / Gold / White / Soft Gray */
 :root {
   --theme-navy: #0A2073;
   --theme-gold: #C6A14A;
@@ -1147,6 +1147,21 @@ body picture {
   display: none;
 }
 
+.property-mobile-summary .heading {
+  margin: 0 0 12px;
+  font-size: 1.35rem;
+  line-height: 1.18;
+}
+
+.property-mobile-summary .specs {
+  margin-bottom: 14px !important;
+}
+
+.property-mobile-summary .agent-box {
+  margin-bottom: 18px;
+  padding: 20px !important;
+}
+
 .property-image-viewer-toolbar {
   position: absolute;
   top: -52px;
@@ -1204,34 +1219,8 @@ body picture {
 
 @media (max-width: 991.98px) {
   .property-mobile-summary {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 14px;
+    display: block;
     margin-bottom: 18px;
-  }
-
-  .property-mobile-summary-title {
-    flex: 1 1 auto;
-    min-width: 0;
-    margin-bottom: 0;
-    font-size: 1.35rem;
-    line-height: 1.18;
-  }
-
-  .property-mobile-summary-actions {
-    flex: 0 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    gap: 8px;
-  }
-
-  .property-mobile-summary-actions .btn {
-    margin: 0 !important;
-    padding: 0.55rem 0.75rem !important;
-    font-size: 0.84rem;
-    white-space: nowrap;
   }
 
   .property-detail-sidebar > .heading,
@@ -1304,16 +1293,7 @@ body picture {
   }
 }
 
-@media (max-width: 420px) {
-  .property-mobile-summary {
-    flex-direction: column;
-  }
 
-  .property-mobile-summary-actions {
-    width: 100%;
-    justify-content: flex-start;
-  }
-}
 /* Viewer toolbar positioning refinement */
 .property-image-viewer-toolbar .property-image-viewer-close {
   position: static;

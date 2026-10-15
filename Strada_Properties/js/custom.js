@@ -1,4 +1,4 @@
-﻿(function () {
+(function () {
 
 	'use strict'
 
@@ -905,6 +905,60 @@
 	
 
 
+	var setupPropertyMobileSummary = function() {
+		var summary = document.querySelector('.property-mobile-summary');
+		var sidebar = document.querySelector('.property-detail-sidebar');
+		var gallery = document.querySelector('.property-image-grid-wrap');
+		var mobileQuery = window.matchMedia('(max-width: 991.98px)');
+		var items;
+		var placeholders = [];
+
+		if (!summary || !sidebar || !gallery) {
+			return;
+		}
+
+		items = [
+			sidebar.querySelector(':scope > .heading'),
+			sidebar.querySelector(':scope > .specs'),
+			sidebar.querySelector(':scope > .agent-box')
+		];
+
+		for (var i = 0; i < items.length; i++) {
+			if (items[i]) {
+				var placeholder = document.createComment('property mobile summary position');
+				items[i].parentNode.insertBefore(placeholder, items[i]);
+				placeholders.push({ item: items[i], marker: placeholder });
+			}
+		}
+
+		var updateSummaryLocation = function() {
+			if (mobileQuery.matches) {
+				for (var j = 0; j < placeholders.length; j++) {
+					summary.appendChild(placeholders[j].item);
+				}
+				gallery.parentNode.insertBefore(summary, gallery);
+				return;
+			}
+
+			for (var k = 0; k < placeholders.length; k++) {
+				var entry = placeholders[k];
+				if (entry.marker.parentNode) {
+					entry.marker.parentNode.insertBefore(entry.item, entry.marker);
+				}
+			}
+			if (summary.parentNode) {
+				summary.parentNode.removeChild(summary);
+			}
+		};
+
+		updateSummaryLocation();
+		if (typeof mobileQuery.addEventListener === 'function') {
+			mobileQuery.addEventListener('change', updateSummaryLocation);
+		} else if (typeof mobileQuery.addListener === 'function') {
+			mobileQuery.addListener(updateSummaryLocation);
+		}
+	};
+	setupPropertyMobileSummary();
 	var setupPropertyImageViewer = function() {
 		var galleryItems = document.querySelectorAll('[data-property-image-viewer]');
 		var viewer;
