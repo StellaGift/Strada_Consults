@@ -1300,3 +1300,15 @@ body picture {
   flex: 0 0 auto;
 }
 
+
+/* Property price emphasis */
+.property-item .property-content .price {
+  font-size: 24px !important;
+  line-height: 1.25;
+}
+
+.property-detail-sidebar > .h3,
+.property-mobile-summary > .h3 {
+  font-size: 2rem;
+  line-height: 1.2;
+}

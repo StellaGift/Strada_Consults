@@ -637,7 +637,7 @@
 			title: 'Fully Furnished 5 Bedroom Duplex with Swimming Pool and BQ',
 			cardTitle: 'Fully Furnished 5 Bedroom Duplex',
 			location: 'Majesty Estate, NTA Road, Port Harcourt',
-			priceHtml: '&#8358;450m NET',
+			priceHtml: '₦450m NET',
 			specOneIcon: 'icon-bed',
 			specOneText: '5 bedrooms',
 			specTwoIcon: 'icon-bath',
@@ -651,7 +651,7 @@
 			title: 'Contemporary 4 Bedroom Duplex',
 			cardTitle: 'Contemporary 4 Bedroom Duplex',
 			location: 'Hilltop Estate, Owerri, Imo State',
-			priceHtml: '&#8358;250m NET',
+			priceHtml: '₦250m NET',
 			specOneIcon: 'icon-bed',
 			specOneText: '4 bedrooms',
 			specTwoIcon: 'icon-bath',
@@ -665,7 +665,7 @@
 			title: 'Luxury 4 Bedroom Duplex',
 			cardTitle: 'Luxury 4 Bedroom Duplex',
 			location: 'Pearl Garden Estate, Off Eliozu, Port Harcourt, High Executive Estate',
-			priceHtml: '&#8358;350m NET',
+			priceHtml: '₦350m NET',
 			specOneIcon: 'icon-bed',
 			specOneText: '4 bedrooms',
 			specTwoIcon: 'icon-expand',
@@ -679,7 +679,7 @@
 			title: 'Executive Fully Furnished 5 Bedroom Triplex',
 			cardTitle: 'Executive Fully Furnished 5 Bedroom Triplex',
 			location: 'NAF Harmony Estate, Off Eliozu, Port Harcourt',
-			priceHtml: '&#8358;400m NET',
+			priceHtml: '₦400m NET',
 			specOneIcon: 'icon-bed',
 			specOneText: '5 bedrooms',
 			specTwoIcon: 'icon-check',
@@ -693,7 +693,7 @@
 			title: 'Exquisitely Built 3 Bedroom Bungalow',
 			cardTitle: 'Exquisitely Built 3 Bedroom Bungalow',
 			location: 'NTA Road, Mgbuoba, Port Harcourt',
-			priceHtml: '&#8358;90m NET',
+			priceHtml: '₦90m NET',
 			specOneIcon: 'icon-bed',
 			specOneText: '3 bedrooms',
 			specTwoIcon: 'icon-expand',
@@ -707,7 +707,7 @@
 			title: 'Stylish and Modern Contemporary 3 Bedroom Bungalow',
 			cardTitle: 'Stylish and Modern Contemporary 3 Bedroom Bungalow',
 			location: 'Rumuodomaya, Port Harcourt',
-			priceHtml: '&#8358;85m NET',
+			priceHtml: '₦85m NET',
 			specOneIcon: 'icon-bed',
 			specOneText: '3 bedrooms',
 			specTwoIcon: 'icon-expand',
@@ -721,7 +721,7 @@
 			title: 'Modern Contemporary 4 Bedroom Bungalow For Sale',
 			cardTitle: 'Modern Contemporary 4 Bedroom Bungalow',
 			location: 'Rumuodomaya, Port Harcourt',
-			priceHtml: '&#8358;120m NET',
+			priceHtml: '₦120m NET',
 			specOneIcon: 'icon-bed',
 			specOneText: '4 bedrooms',
 			specTwoIcon: 'icon-expand',
@@ -735,7 +735,7 @@
 			title: 'Modern 4 Bedroom Terrace Duplexes',
 			cardTitle: 'Modern 4 Bedroom Terrace Duplexes',
 			location: 'Ivory Height, Shell Cooperative Estate, Eneka Link Road, Port Harcourt',
-			priceHtml: '&#8358;200m per unit',
+			priceHtml: '₦200m per unit',
 			specOneIcon: 'icon-bed',
 			specOneText: '4 bedrooms',
 			specTwoIcon: 'icon-check',
@@ -749,7 +749,7 @@
 			title: 'Executive 4 Bedroom Duplex',
 			cardTitle: 'Executive 4 Bedroom Duplex',
 			location: 'New Town Estate, SarS Road, Port Harcourt',
-			priceHtml: '&#8358;300m NET',
+			priceHtml: '₦300m NET',
 			specOneIcon: 'icon-bed',
 			specOneText: '4 bedrooms',
 			specTwoIcon: 'icon-expand',
@@ -763,7 +763,7 @@
 			title: 'Luxury Furnished 5 Bedroom Duplex With Swimming Pool',
 			cardTitle: 'Luxury Furnished 5 Bedroom Duplex With Swimming Pool',
 			location: 'Centenary Gardens Estate, Eliozu-Eneka Link Road, Port Harcourt',
-			priceHtml: '&#8358;500m NET',
+			priceHtml: '₦500m NET',
 			specOneIcon: 'icon-bed',
 			specOneText: '5 bedrooms',
 			specTwoIcon: 'icon-check',
@@ -780,7 +780,7 @@
 			title: 'Very Prime 2 and 1/2 Plots of Land',
 			cardTitle: 'Very Prime 2 and 1/2 Plots of Land',
 			location: 'Choba, Port Harcourt',
-			priceHtml: '&#8358;50m NET',
+			priceHtml: '₦50m NET',
 			specOneIcon: 'icon-expand',
 			specOneText: '2.5 plots',
 			specTwoIcon: 'icon-check',
@@ -794,7 +794,7 @@
 			title: '4 Modern 4 Bedroom Detached Duplex',
 			cardTitle: 'Modern 4 Bedroom Detached Duplex',
 			location: 'Eliozu-Eneka Link Road, Port Harcourt',
-			priceHtml: '&#8358;260m NET',
+			priceHtml: '₦260m NET',
 			specOneIcon: 'icon-bed',
 			specOneText: '4 bedrooms',
 			specTwoIcon: 'icon-bath',
@@ -1287,55 +1287,55 @@
 			address: '18 Azikiwe Road, Old GRA',
 			area: 'Old GRA',
 			lga: 'Port Harcourt',
-			price: 'NGN 185,000,000'
+			price: '₦185,000,000'
 		},
 		{
 			address: '42 Aba Road, D-Line',
 			area: 'D-Line',
 			lga: 'Port Harcourt',
-			price: 'NGN 142,000,000'
+			price: '₦142,000,000'
 		},
 		{
 			address: '12 Woji Road, Woji',
 			area: 'Woji',
 			lga: 'Obio-Akpor',
-			price: 'NGN 127,000,000'
+			price: '₦127,000,000'
 		},
 		{
 			address: '7 Ikwerre Road, Rumuokoro',
 			area: 'Rumuokoro',
 			lga: 'Obio-Akpor',
-			price: 'NGN 118,000,000'
+			price: '₦118,000,000'
 		},
 		{
 			address: '9 Nchia Road, Aleto',
 			area: 'Aleto',
 			lga: 'Eleme',
-			price: 'NGN 96,000,000'
+			price: '₦96,000,000'
 		},
 		{
 			address: '21 Isiokpo Main Road, Isiokpo',
 			area: 'Isiokpo',
 			lga: 'Ikwerre',
-			price: 'NGN 88,000,000'
+			price: '₦88,000,000'
 		},
 		{
 			address: '5 Omagwa Airport Road, Omagwa',
 			area: 'Omagwa',
 			lga: 'Ikwerre',
-			price: 'NGN 102,000,000'
+			price: '₦102,000,000'
 		},
 		{
 			address: '16 Afam Road, Afam',
 			area: 'Afam',
 			lga: 'Oyigbo',
-			price: 'NGN 79,000,000'
+			price: '₦79,000,000'
 		},
 		{
 			address: '3 East-West Link Road, Ahoada Town',
 			area: 'Ahoada Town',
 			lga: 'Ahoada East',
-			price: 'NGN 83,000,000'
+			price: '₦83,000,000'
 		}
 	];
 
