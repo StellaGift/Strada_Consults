@@ -20,7 +20,7 @@ Static hosts differ in how they apply response headers. Use the provided `_heade
 
 ## Security and growth
 
-- No third-party scripts, remote fonts, analytics, or frontend packages.
+- No third-party scripts, analytics, or frontend packages. The Montserrat heading font is served by Google Fonts.
 - All site assets use same-origin relative paths.
 - No contact form collects personal data in the browser; contact actions open the visitor's email client or phone dialler.
 - Security headers restrict framing, plugins, referrers, permissions, and resource origins.
