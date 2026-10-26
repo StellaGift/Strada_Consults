@@ -1,0 +1,206 @@
+.hero-art {
+  perspective: 1100px;
+  isolation: isolate;
+}
+
+.emblem-scene {
+  position: relative;
+  width: min(100%, 440px);
+  min-height: 390px;
+  display: grid;
+  place-items: center;
+  transform-style: preserve-3d;
+}
+
+.emblem-aura {
+  position: absolute;
+  width: 270px;
+  height: 270px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(228, 194, 72, .23), rgba(228, 194, 72, .07) 44%, transparent 72%);
+  filter: blur(9px);
+  transform: translateZ(-30px);
+}
+
+.emblem-coin {
+  position: relative;
+  z-index: 1;
+  width: clamp(205px, 25vw, 256px);
+  aspect-ratio: 1;
+  transform-style: preserve-3d;
+  animation: emblem-spin 11s cubic-bezier(.42, 0, .58, 1) infinite;
+  filter: drop-shadow(0 28px 24px rgba(0, 0, 0, .48));
+}
+
+.coin-edge,
+.coin-face {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+}
+
+.coin-edge {
+  background:
+    repeating-linear-gradient(0deg, #513b11 0 2px, #e8cb67 2px 3px, #977026 3px 5px),
+    linear-gradient(90deg, #5a4214, #f6df8c 35%, #8d691d 70%, #3c2b0c);
+  border: 2px solid #e2c55f;
+  box-shadow: inset 0 0 0 5px rgba(34, 24, 6, .68), 0 0 22px rgba(228, 194, 72, .16);
+  transform: translateZ(-8px);
+}
+
+.coin-face {
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  backface-visibility: hidden;
+  border: 7px solid transparent;
+  background:
+    linear-gradient(145deg, #080a0e 8%, #17130a 48%, #050609 100%) padding-box,
+    linear-gradient(125deg, #fff0a4, #a77d22 20%, #f5dc7a 39%, #6c4c10 64%, #f4db7c 82%, #7f5b16) border-box;
+  box-shadow: inset 0 0 0 2px rgba(255, 231, 147, .3), inset 0 0 26px rgba(231, 195, 80, .18);
+}
+
+.coin-front {
+  transform: translateZ(8px);
+}
+
+.coin-front img {
+  display: block;
+  width: 84%;
+  height: 84%;
+  object-fit: contain;
+  border-radius: 50%;
+  background: #000;
+  filter: drop-shadow(0 2px 8px rgba(239, 202, 78, .25));
+}
+
+.coin-glint {
+  position: absolute;
+  inset: -35% -65%;
+  z-index: 2;
+  pointer-events: none;
+  background: linear-gradient(112deg, transparent 39%, rgba(255, 255, 255, .04) 45%, rgba(255, 249, 220, .48) 49%, rgba(255, 255, 255, .12) 52%, transparent 59%);
+  transform: translateX(-65%) rotate(8deg);
+  animation: emblem-glint 5.5s ease-in-out infinite;
+}
+
+.coin-back {
+  transform: rotateY(180deg) translateZ(8px);
+  align-content: center;
+  gap: 7px;
+  color: #f3d875;
+  text-align: center;
+  background:
+    radial-gradient(circle at 50% 35%, rgba(240, 207, 99, .17), transparent 54%),
+    linear-gradient(145deg, #11100d, #050609 68%);
+}
+
+.coin-back::before,
+.coin-back::after {
+  position: absolute;
+  inset: 12px;
+  border: 1px solid rgba(238, 207, 111, .58);
+  border-radius: 50%;
+  content: "";
+}
+
+.coin-back::after {
+  inset: 19px;
+  border-color: rgba(238, 207, 111, .22);
+}
+
+.coin-back-mark {
+  font-family: Georgia, serif;
+  font-size: 88px;
+  font-weight: 700;
+  line-height: .9;
+  text-shadow: 0 1px #fff0a4, 0 3px #a77d22, 0 8px 16px rgba(0, 0, 0, .8);
+}
+
+.coin-back-name {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .28em;
+  padding-left: .28em;
+}
+
+.coin-back-caption {
+  font-size: 6px;
+  letter-spacing: .13em;
+  color: #c9bd8d;
+}
+
+.emblem-reflection {
+  position: absolute;
+  left: 18%;
+  bottom: 29px;
+  width: 64%;
+  height: 35px;
+  border-radius: 50%;
+  background: radial-gradient(ellipse, rgba(228, 194, 72, .32), rgba(146, 232, 206, .08) 45%, transparent 72%);
+  filter: blur(13px);
+  transform: rotateX(64deg) translateZ(-35px);
+}
+
+.emblem-orbit {
+  position: absolute;
+  width: 350px;
+  height: 178px;
+  border: 1px solid rgba(228, 194, 72, .27);
+  border-radius: 50%;
+  transform: rotate(-27deg) rotateX(65deg) translateZ(-15px);
+}
+
+.emblem-orbit-two {
+  width: 310px;
+  height: 210px;
+  border-color: rgba(146, 232, 206, .15);
+  transform: rotate(42deg) rotateX(68deg) translateZ(-12px);
+}
+
+.emblem-spark {
+  position: absolute;
+  z-index: 2;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #fff0a4;
+  box-shadow: 0 0 15px 4px rgba(238, 207, 111, .65);
+}
+
+.emblem-spark-one { top: 19%; right: 24%; }
+.emblem-spark-two { bottom: 25%; right: 19%; width: 3px; height: 3px; }
+.emblem-spark-three { top: 34%; left: 13%; width: 3px; height: 3px; }
+
+@keyframes emblem-spin {
+  0% { transform: rotateX(8deg) rotateY(0deg) rotateZ(-8deg); }
+  50% { transform: rotateX(-4deg) rotateY(180deg) rotateZ(8deg); }
+  100% { transform: rotateX(8deg) rotateY(360deg) rotateZ(-8deg); }
+}
+
+@keyframes emblem-glint {
+  0%, 16% { transform: translateX(-70%) rotate(8deg); opacity: 0; }
+  28% { opacity: 1; }
+  48%, 100% { transform: translateX(70%) rotate(8deg); opacity: 0; }
+}
+
+@media (max-width: 800px) {
+  .emblem-scene { min-height: 330px; }
+  .emblem-orbit { width: 310px; }
+}
+
+@media (max-width: 560px) {
+  .emblem-scene { min-height: 285px; }
+  .emblem-coin { width: 210px; }
+  .emblem-orbit { width: 275px; height: 150px; }
+  .emblem-orbit-two { width: 250px; height: 170px; }
+  .emblem-reflection { bottom: 15px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .emblem-coin,
+  .coin-glint { animation: none !important; }
+
+  .emblem-coin { transform: rotateX(8deg) rotateY(-18deg) rotateZ(-8deg); }
+  .coin-glint { opacity: .35; transform: translateX(0) rotate(8deg); }
+}
