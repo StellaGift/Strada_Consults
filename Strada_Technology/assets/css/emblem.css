@@ -84,6 +84,31 @@
   animation: emblem-glint 5.5s ease-in-out infinite;
 }
 
+.coin-slogan {
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  bottom: 20px;
+  width: max-content;
+  color: #f5dc7a;
+  font-size: clamp(6px, .65vw, 8px);
+  font-weight: 800;
+  letter-spacing: .15em;
+  text-shadow: 0 1px 1px #000, 0 0 8px rgba(245, 220, 122, .72);
+  transform: translateX(-50%);
+}
+
+.coin-slogan::before {
+  position: absolute;
+  top: -7px;
+  left: 50%;
+  width: 34px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #e8cb67, transparent);
+  content: "";
+  transform: translateX(-50%);
+}
+
 .coin-back {
   transform: rotateY(180deg) translateZ(8px);
   align-content: center;
@@ -171,6 +196,11 @@
 .emblem-spark-one { top: 19%; right: 24%; }
 .emblem-spark-two { bottom: 25%; right: 19%; width: 3px; height: 3px; }
 .emblem-spark-three { top: 34%; left: 13%; width: 3px; height: 3px; }
+
+.label-left {
+  top: 49%;
+  left: 0;
+}
 
 @keyframes emblem-spin {
   0% { transform: rotateX(8deg) rotateY(0deg) rotateZ(-8deg); }
