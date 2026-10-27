@@ -88,6 +88,12 @@ html[data-theme="dark"] .approach .text-link {
   line-height: 1;
 }
 
+.solution-card .card-icon svg {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
 .menu-icon,
 .menu-icon::before,
 .menu-icon::after {
