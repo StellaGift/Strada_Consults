@@ -61,6 +61,24 @@ html[data-theme="dark"] .approach .text-link {
   color: var(--gold);
 }
 
+.workspace-showcase {
+  padding: clamp(42px, 6vw, 76px) 0;
+  background: #101b2b;
+}
+
+.workspace-showcase .container {
+  max-width: 1080px;
+}
+
+.workspace-showcase img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(228, 194, 72, .28);
+  border-radius: clamp(12px, 2vw, 22px);
+  box-shadow: 0 20px 55px rgba(0, 0, 0, .28);
+}
+
 .theme-toggle {
   display: inline-flex;
   align-items: center;
