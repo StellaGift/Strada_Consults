@@ -2,6 +2,73 @@ html[data-theme="light"] {
   color-scheme: light;
 }
 
+.hero {
+  isolation: isolate;
+  background:
+    radial-gradient(ellipse at 17% 21%, rgba(53, 150, 190, .2), transparent 36%),
+    radial-gradient(ellipse at 78% 38%, rgba(228, 194, 72, .14), transparent 34%),
+    radial-gradient(ellipse at 53% 108%, rgba(91, 199, 177, .14), transparent 43%),
+    linear-gradient(120deg, #0b1422 0%, #101b2b 45%, #123044 100%);
+}
+
+.hero::before {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  background: url("../img/hero_bg.png") center / cover no-repeat;
+  content: "";
+  opacity: .4;
+  mix-blend-mode: screen;
+  pointer-events: none;
+}
+
+.hero-grid,
+.hero-footer {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 span {
+  color: #f3d878;
+  background: linear-gradient(105deg, #fff0a4 0%, #f0d15d 42%, #c89828 74%, #fff0a4 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 18px rgba(228, 194, 72, .24));
+}
+
+.hero-description {
+  color: #d0dce5;
+  text-shadow: 0 0 20px rgba(74, 174, 188, .11);
+}
+
+.hero-note {
+  color: #e2f8f2;
+  text-shadow: 0 0 20px rgba(146, 232, 206, .22);
+}
+
+.hero-note::before {
+  background: linear-gradient(180deg, #e4c248, #92e8ce 55%, #63aee8);
+  box-shadow: 0 0 14px rgba(146, 232, 206, .38);
+}
+
+.hero .button-primary {
+  background: linear-gradient(115deg, #f4df8c, #e4c248 55%, #c99d2d);
+  box-shadow: inset 0 1px rgba(255, 255, 255, .42), 0 0 22px rgba(228, 194, 72, .2);
+}
+
+.hero .button-primary:hover,
+.hero .button-primary:focus-visible {
+  background: linear-gradient(115deg, #fff0a4, #f1d875 58%, #ddb548);
+  box-shadow: inset 0 1px rgba(255, 255, 255, .55), 0 0 28px rgba(228, 194, 72, .32);
+}
+
+.hero-footer {
+  border-image: linear-gradient(90deg, rgba(146, 232, 206, .18), rgba(228, 194, 72, .55), rgba(99, 174, 232, .18)) 1;
+  color: #9fb5c2;
+  text-shadow: 0 0 14px rgba(99, 174, 232, .2);
+}
+
 /* These labels belong to the sections that switch themes. */
 .intro .eyebrow,
 .solutions .eyebrow,
