@@ -17,7 +17,7 @@ html[data-theme="light"] {
   inset: 0;
   background: url("../img/hero_bg.png") center / cover no-repeat;
   content: "";
-  opacity: .4;
+  opacity: .32;
   mix-blend-mode: screen;
   pointer-events: none;
 }
@@ -67,6 +67,18 @@ html[data-theme="light"] {
   border-image: linear-gradient(90deg, rgba(146, 232, 206, .18), rgba(228, 194, 72, .55), rgba(99, 174, 232, .18)) 1;
   color: #9fb5c2;
   text-shadow: 0 0 14px rgba(99, 174, 232, .2);
+}
+
+.label-top-center {
+  top: 21px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.label-bottom-center {
+  bottom: 21px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* These labels belong to the sections that switch themes. */
@@ -629,6 +641,18 @@ html[data-theme="dark"] .approach .text-link {
 
   .site-faq-item summary {
     font-size: 15px;
+  }
+
+  .label-top-center,
+  .label-bottom-center {
+    padding: 7px 5px;
+    font-size: 6px;
+    letter-spacing: .03em;
+  }
+
+  .label-top-center::before,
+  .label-bottom-center::before {
+    margin-right: 4px;
   }
 }
 
