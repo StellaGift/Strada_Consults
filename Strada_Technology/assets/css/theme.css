@@ -746,3 +746,25 @@ html[data-theme="dark"] .solution-card:hover {
 .contact {
   background: radial-gradient(ellipse at 18% 18%, rgba(146, 232, 206, .12), transparent 42%), radial-gradient(ellipse at 88% 82%, rgba(228, 194, 72, .1), transparent 40%), linear-gradient(115deg, #153440 0%, #173c47 52%, #1d4650 100%);
 }
+
+.about-page .eyebrow,
+.about-principle-card > span {
+  font-size: 12px;
+}
+
+.about-hero h1 {
+  font-size: clamp(48px, calc(6.3vw + 2px), 78px);
+}
+
+.about-story h2,
+.about-approach h2 {
+  font-size: clamp(36px, calc(4.5vw + 2px), 56px);
+}
+
+.about-principle-card h2 {
+  font-size: clamp(24px, calc(2.5vw + 2px), 32px);
+}
+
+.about-practice-list h3 {
+  font-size: 19px;
+}
