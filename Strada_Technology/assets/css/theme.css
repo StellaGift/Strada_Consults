@@ -685,3 +685,64 @@ html[data-theme="dark"] .approach .text-link {
     border: 0;
   }
 }
+
+/* Soft, hero-matched surfaces for both theme states and the permanent dark sections. */
+.intro {
+  background: linear-gradient(125deg, #e8eef1 0%, #e3ebef 48%, #dce7ec 100%);
+}
+
+.solutions {
+  background: linear-gradient(115deg, #e5ecef 0%, #eaf0f2 52%, #dfe9ed 100%);
+}
+
+.approach {
+  background: linear-gradient(130deg, #e2eaed 0%, #e8eef0 48%, #d9e5e9 100%);
+}
+
+html[data-theme="dark"] .intro {
+  background: radial-gradient(ellipse at 14% 20%, rgba(72, 125, 153, .2), transparent 42%), linear-gradient(125deg, #111d2d 0%, #172538 52%, #1b3441 100%);
+}
+
+html[data-theme="dark"] .solutions {
+  background: radial-gradient(ellipse at 86% 18%, rgba(53, 125, 126, .16), transparent 40%), linear-gradient(115deg, #132033 0%, #17283b 52%, #1a303d 100%);
+}
+
+html[data-theme="dark"] .approach {
+  background: radial-gradient(ellipse at 10% 80%, rgba(50, 126, 131, .16), transparent 44%), linear-gradient(130deg, #142631 0%, #172e39 52%, #1b3742 100%);
+}
+
+html[data-theme="dark"] .solution-card {
+  background: linear-gradient(145deg, rgba(255, 255, 255, .035), rgba(17, 34, 48, .3));
+}
+
+html[data-theme="dark"] .solution-card:hover {
+  background: linear-gradient(145deg, #203649, #1b303e);
+}
+
+.workspace-showcase,
+.legal-content,
+.site-faq,
+.site-footer {
+  background: radial-gradient(ellipse at 82% 16%, rgba(45, 108, 118, .16), transparent 42%), linear-gradient(125deg, #0d1726 0%, #101d2d 54%, #142b38 100%);
+}
+
+.about-page {
+  background: linear-gradient(125deg, #0d1726 0%, #101d2d 54%, #142b38 100%);
+}
+
+.about-hero {
+  background: radial-gradient(ellipse at 78% 35%, rgba(62, 143, 151, .2), transparent 40%), linear-gradient(120deg, #101b2b 0%, #12283a 58%, #173744 100%);
+}
+
+.about-story {
+  background: radial-gradient(ellipse at 12% 45%, rgba(57, 111, 149, .14), transparent 44%), linear-gradient(120deg, #121f31, #17283b 58%, #1a3040);
+}
+
+.about-approach {
+  background: radial-gradient(ellipse at 86% 65%, rgba(54, 132, 131, .17), transparent 43%), linear-gradient(125deg, #142631, #172e39 55%, #1b3742);
+}
+
+.about-contact,
+.contact {
+  background: radial-gradient(ellipse at 18% 18%, rgba(146, 232, 206, .12), transparent 42%), radial-gradient(ellipse at 88% 82%, rgba(228, 194, 72, .1), transparent 40%), linear-gradient(115deg, #153440 0%, #173c47 52%, #1d4650 100%);
+}
