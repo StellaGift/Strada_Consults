@@ -293,7 +293,7 @@ html[data-theme="dark"] .approach .text-link {
 
 .about-visual figcaption {
   margin-top: 12px;
-  color: #9eacb8;
+  color: var(--gold);
   font-size: 11px;
   letter-spacing: .08em;
   text-transform: uppercase;
