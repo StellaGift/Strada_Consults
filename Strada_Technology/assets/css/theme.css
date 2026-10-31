@@ -734,14 +734,14 @@ html[data-theme="dark"] .solution-card:hover {
   position: relative;
   isolation: isolate;
   overflow: hidden;
-  background: radial-gradient(ellipse at 78% 35%, rgba(70, 170, 140, .24), transparent 42%), radial-gradient(ellipse at 12% 82%, rgba(56, 124, 102, .16), transparent 40%), linear-gradient(120deg, #102522 0%, #12332f 52%, #19443d 100%);
+  background: radial-gradient(ellipse at 20% 18%, rgba(141, 146, 63, .25), transparent 38%), radial-gradient(ellipse at 78% 36%, rgba(20, 157, 127, .25), transparent 42%), radial-gradient(ellipse at 72% 84%, rgba(10, 125, 78, .2), transparent 42%), linear-gradient(120deg, #172d20 0%, #123b34 52%, #0e3529 100%);
 }
 
 .about-hero::before {
   position: absolute;
   z-index: 0;
   inset: 0;
-  background: url("../img/about_hero_bg.png") center / cover no-repeat, linear-gradient(125deg, #80b99a, #4e8978);
+  background: url("../img/about_hero_bg.png") center / cover no-repeat, radial-gradient(ellipse at 18% 18%, #9b9848, transparent 48%), radial-gradient(ellipse at 64% 46%, #168a78, transparent 54%), linear-gradient(125deg, #697a31 0%, #16796e 42%, #087b50 72%, #103c2a 100%);
   background-blend-mode: multiply;
   content: "";
   opacity: .4;
