@@ -731,11 +731,34 @@ html[data-theme="dark"] .solution-card:hover {
 }
 
 .about-hero {
-  background: radial-gradient(ellipse at 78% 35%, rgba(62, 143, 151, .2), transparent 40%), linear-gradient(120deg, #101b2b 0%, #12283a 58%, #173744 100%);
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: radial-gradient(ellipse at 18% 22%, rgba(228, 194, 72, .13), transparent 34%), radial-gradient(ellipse at 78% 35%, rgba(62, 143, 151, .24), transparent 42%), linear-gradient(120deg, #0b1422 0%, #101b2b 48%, #123044 100%);
+}
+
+.about-hero::before {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  background: url("../img/about_hero_bg.png") center / cover no-repeat;
+  content: "";
+  opacity: .4;
+  mix-blend-mode: screen;
+  pointer-events: none;
+}
+
+.about-hero-grid {
+  position: relative;
+  z-index: 1;
 }
 
 .about-story {
   background: radial-gradient(ellipse at 12% 45%, rgba(57, 111, 149, .14), transparent 44%), linear-gradient(120deg, #121f31, #17283b 58%, #1a3040);
+}
+
+.about-principles {
+  background: radial-gradient(ellipse at 18% 20%, rgba(228, 194, 72, .07), transparent 36%), radial-gradient(ellipse at 86% 80%, rgba(62, 143, 151, .12), transparent 42%), linear-gradient(125deg, #101b2b, #132235 56%, #17303b);
 }
 
 .about-approach {
