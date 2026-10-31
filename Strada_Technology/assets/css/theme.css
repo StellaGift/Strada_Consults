@@ -734,17 +734,17 @@ html[data-theme="dark"] .solution-card:hover {
   position: relative;
   isolation: isolate;
   overflow: hidden;
-  background: radial-gradient(ellipse at 18% 22%, rgba(228, 194, 72, .13), transparent 34%), radial-gradient(ellipse at 78% 35%, rgba(62, 143, 151, .24), transparent 42%), linear-gradient(120deg, #0b1422 0%, #101b2b 48%, #123044 100%);
+  background: radial-gradient(ellipse at 78% 35%, rgba(70, 170, 140, .24), transparent 42%), radial-gradient(ellipse at 12% 82%, rgba(56, 124, 102, .16), transparent 40%), linear-gradient(120deg, #102522 0%, #12332f 52%, #19443d 100%);
 }
 
 .about-hero::before {
   position: absolute;
   z-index: 0;
   inset: 0;
-  background: url("../img/about_hero_bg.png") center / cover no-repeat;
+  background: url("../img/about_hero_bg.png") center / cover no-repeat, linear-gradient(125deg, #80b99a, #4e8978);
+  background-blend-mode: multiply;
   content: "";
   opacity: .4;
-  mix-blend-mode: screen;
   pointer-events: none;
 }
 
