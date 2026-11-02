@@ -11576,13 +11576,13 @@ html[data-color-mode="dark"] .faq-contact-section {
 }
 
 .hero.page-inner.services-hero {
-  background-position: center 42%;
+  margin: 16px 20px 0;
+  width: calc(100% - 40px);
+  border-radius: 28px;
+  background-image: url("../images/service-bg.png");
+  background-position: center center;
   background-size: cover;
-}
-
-.hero.page-inner.contact-hero.overlay:before,
-.hero.page-inner.about-hero.overlay:before {
-  background-color: rgba(0, 0, 0, 0.36);
+  background-repeat: no-repeat;
 }
 
 @media (max-width: 767.98px) {
@@ -11592,12 +11592,17 @@ html[data-color-mode="dark"] .faq-contact-section {
   }
 
   .hero.page-inner.services-hero {
-    background-position: calc(0% - 25px) 42% !important;
+    margin: 12px 12px 0;
+    width: calc(100% - 24px);
+    min-height: 280px;
+    border-radius: 20px;
+    background-position: 58% center !important;
   }
 }
 
 .hero.page-inner.services-hero.overlay:before {
-  background-color: rgba(0, 0, 0, 0.32);
+  background-color: rgba(0, 0, 0, 0.38);
+  border-radius: inherit;
 }
 
 .section-4 .callout-media {
