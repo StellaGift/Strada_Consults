@@ -12695,12 +12695,9 @@ html[data-color-mode="dark"] .uploaded-media-remove:focus-visible {
 }
 
 .team-featured {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
   margin-bottom: 2rem;
 }
 
@@ -12722,7 +12719,8 @@ html[data-color-mode="dark"] .uploaded-media-remove:focus-visible {
 }
 
 .team-card--lead {
-  width: min(100%, 680px);
+  width: 100%;
+  min-width: 0;
   padding: 34px;
 }
 
@@ -12805,6 +12803,11 @@ html[data-color-mode="dark"] .uploaded-media-remove:focus-visible {
 }
 
 @media (max-width: 767.98px) {
+  .team-featured {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+  }
+
   .team-card,
   .team-card--lead {
     padding: 24px 20px;
